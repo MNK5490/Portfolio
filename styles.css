@@ -65,7 +65,7 @@ header {
 header {
   line-height: 1.5;
 }
-header .profile-image {
+header .image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
@@ -75,6 +75,22 @@ header .profile-image {
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+}
+.experience-layout {
+  background-image: url(images/sparc.jpg)
+
+}
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+}
+.float-left {
+  float: left;
+
 }
 .tag {
   background-color: #efefef;
