@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+#experience {
+  color: white;
+
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -39,11 +44,15 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
+.name {
 
+  color: white;
+}
 .nav .name {
     display: block;
     margin-right: auto;
     color: white;
+
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -65,16 +74,19 @@ header {
 header {
   line-height: 1.5;
 }
+
 header .image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
 }
+
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(2.0) rotate(10deg);
+
 }
 .experience-layout {
   background-image: url(images/sparc.jpg)
@@ -84,35 +96,37 @@ header .profile-image:hover {
     position: absolute;
     right: 0px;
     width: 300px;
-    border: 3px solid #73AD21;
+    border: 3px solid white;
     padding: 10px;
 }
 }
-.float-left {
-  float: left;
-
-}
 .tag {
-  background-color: #efefef;
-  color: black;
+  color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 }
 .location {
-  background-color: #222;
-  color: yellow;
+    font-size: 500;
+    color: white;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+}
+
+.float-left {
+  float: left;
+}
+  .float-right {
+    float: right;
 }
 .card:hover {
   border-color: #ff99ff;
