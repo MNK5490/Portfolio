@@ -61,7 +61,7 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: orange;
 }
 
 header {
@@ -84,7 +84,7 @@ header .image {
   transition: all .5s;
 }
 
-header .profile-image:hover {
+header .image:hover {
   transform: scale(2.0) rotate(10deg)
   webkit-transform: rotate(10deg);
   moz-transform: rotate(10deg);
@@ -132,7 +132,7 @@ header .profile-image:hover {
     float: right;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #ff9904;
 }
 
 ul.skills {
