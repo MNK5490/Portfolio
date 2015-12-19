@@ -45,14 +45,13 @@ a:hover {
   padding: 0;
 }
 .name {
-
   color: white;
 }
+
 .nav .name {
     display: block;
     margin-right: auto;
     color: white;
-
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -93,7 +92,8 @@ header .image:hover {
 
 }
 .experience-layout {
-  background-image: url(images/sparc.jpg)
+  background-image: url(images/sparc.jpg);
+  color: #ff9904;
 
 }
 .right {
