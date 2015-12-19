@@ -84,7 +84,7 @@ header .image {
 }
 
 header .image:hover {
-  transform: scale(2.0) rotate(10deg)
+  transform: scale(2.0) rotate(10deg);
   webkit-transform: rotate(10deg);
   moz-transform: rotate(10deg);
   ms-transform: rotate(10deg);
@@ -111,7 +111,7 @@ header .image:hover {
   margin: 10px auto;
 }
 .location {
-    font-size 2.0em;
+    font-size: 2.0em;
     color: white;
 }
 .card {
