@@ -21,8 +21,9 @@ a {
   text-decoration: none;
   color: #999;
 }
+.card a:hover,
 a:hover {
-  color: #6633ff;
+  color: orange;
 }
 
 /* Section Styles */
@@ -54,6 +55,7 @@ a:hover {
   margin: 30px;
   padding: 20px 40px 40px;
   width: 500px;
+  height: 450px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -132,10 +134,6 @@ a.github {
 a.social:hover {
   opacity: 1;
 }
-.clearfix {
-
-  clear: both;
-}
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -161,6 +159,9 @@ a.social:hover {
 
   main {
     padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   main p {
