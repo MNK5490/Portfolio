@@ -18,8 +18,9 @@ a {
   text-decoration: none;
   color: #999; }
 
+.card a:hover,
 a:hover {
-  color: #6633ff; }
+  color: orange; }
 
 /* Section Styles */
 .experience-layout {
@@ -48,6 +49,7 @@ a:hover {
   margin: 30px;
   padding: 20px 40px 40px;
   width: 500px;
+  height: 450px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -117,9 +119,6 @@ a.github {
 a.social:hover {
   opacity: 1; }
 
-.clearfix {
-  clear: both; }
-
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   .flex {
@@ -139,7 +138,10 @@ a.social:hover {
     padding: 0 30px; }
 
   main {
-    padding-top: 20px; }
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
   main p {
     line-height: 1.6em; }
@@ -172,6 +174,19 @@ header .image:hover {
   moz-transform: rotate(10deg);
   ms-transform: rotate(10deg);
   o-transform: rotate(10deg); }
+
+.experience-layout {
+  background-image: url(../images/sparc.jpg);
+  color: #ff9904;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.experience-header {
+  padding: 15px;
+  border: 1px solid orange;
+  border-radius: 15px;
+  background: white; }
 
 .main-nav {
   width: 100%;

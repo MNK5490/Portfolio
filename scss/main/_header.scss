@@ -27,6 +27,20 @@ header .image:hover {
 
 }
 
+.experience-layout {
+    background-image: url(../images/sparc.jpg);
+    color: #ff9904;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.experience-header {
+    padding: 15px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    background: white;
+}
 // nav
 
 
