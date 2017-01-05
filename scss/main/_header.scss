@@ -51,6 +51,7 @@ header .image:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 3;
 }
 .nav {
   display: flex;

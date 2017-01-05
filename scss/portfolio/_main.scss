@@ -1,0 +1,29 @@
+.portfolio-gallery {
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+        .container {
+            width: 45%;
+            list-style-type: none;
+            position: relative;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            margin: 2em;
+        }
+    }
+
+.WebDashboard {
+    background: url('../images/WebDashboard.png');
+    background-size: contain;
+    height:100%;
+    width:100%;
+    background-repeat:no-repeat;
+}
+
+.portfolio-gallery li:hover {
+    flex-grow: 1.5;
+}
