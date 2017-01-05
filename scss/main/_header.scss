@@ -1,0 +1,67 @@
+header {
+  text-align: center;
+  background: url('../images/charleston.jpg') no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+
+header .image {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+
+header .image:hover {
+  transform: scale(2.0) rotate(10deg);
+  webkit-transform: rotate(10deg);
+  moz-transform: rotate(10deg);
+  ms-transform: rotate(10deg);
+  o-transform: rotate(10deg);
+
+}
+
+// nav
+
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.name {
+
+  color: white;
+}
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: orange;
+}
