@@ -1,0 +1,18 @@
+.portfolio-gallery {
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    li {
+        width: 95%;
+        list-style-type: none;
+        position: relative;
+        height: 300px;
+    }
+}
+
+.portfolio-gallery li:nth-of-type(1){
+    background: url('../images/Web-App-Dashboard.png');
+}
