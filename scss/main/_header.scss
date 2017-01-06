@@ -1,6 +1,6 @@
 header {
   text-align: center;
-  background: url('../images/charleston.jpg') no-repeat top center;
+  background: #009688;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -9,21 +9,23 @@ header {
       color: white;
   }
   .image {
-  margin-top: 50px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+      margin-top: 50px;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 6px solid #B2DFDB;
+      transition: all .5s;
+      box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
     }
 }
 
 .experience-layout {
     background-image: url(../images/sparc.jpg);
     color: #ff9904;
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: flex-start;
+    display: none;
 }
 
 .experience-header {
@@ -31,6 +33,10 @@ header {
     border: 1px solid orange;
     border-radius: 15px;
     background: white;
+}
+
+.portfolio-header {
+    display: none;
 }
 
 //Psuedo Elements

@@ -37,18 +37,17 @@ body {
 
 /* Link Styles */
 a {
-  text-decoration: none;
-  color: #999; }
+  text-decoration: none; }
 
 a:hover {
-  color: orange; }
+  color: #FFC107; }
 
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 6px;
   transition: all .5s; }
   @media (min-width: 724px) {
@@ -60,15 +59,15 @@ a:hover {
       width: 500px;
       height: 800px; } }
 
-.card:hover {
-  border-color: #ff9904; }
+.experience-card a {
+  color: black; }
 
-.card a:hover {
-  color: orange; }
+.experience-card a:hover {
+  color: #ffc107; }
 
 header {
   text-align: center;
-  background: url("../images/charleston.jpg") no-repeat top center;
+  background: #009688;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -80,21 +79,25 @@ header {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 3px solid white;
-    transition: all .5s; }
+    border: 6px solid #B2DFDB;
+    transition: all .5s;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .experience-layout {
   background-image: url(../images/sparc.jpg);
   color: #ff9904;
-  display: flex;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: flex-start;
+  display: none; }
 
 .experience-header {
   padding: 15px;
   border: 1px solid orange;
   border-radius: 15px;
   background: white; }
+
+.portfolio-header {
+  display: none; }
 
 header .image:hover {
   transform: scale(1.5) rotate(10deg);
@@ -105,12 +108,13 @@ header .image:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(255, 193, 7, 0.9);
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
-  z-index: 3; }
+  z-index: 3;
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .nav {
   display: flex;
@@ -132,10 +136,11 @@ header .image:hover {
   padding: 5px 10px 10px 10px; }
 
 .nav a {
-  transition: all .5s; }
+  transition: all .5s;
+  color: white; }
 
-.nav a:hover {
-  color: orange; }
+.main-nav a:hover {
+  color: #212121; }
 
 footer {
   width: 100%;
@@ -175,7 +180,8 @@ a.social:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background: #B2DFDB; }
   @media (min-width: 724px) {
     .flex {
       flex-direction: row; } }
@@ -190,13 +196,13 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #009688;
   color: white;
   padding: 5px 10px;
   margin: 2px; }
 
 .skills li:nth-child(odd) {
-  background: #0399ff; }
+  background: #FFC107; }
 
 #experience {
   color: white; }
@@ -205,7 +211,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  background: #B2DFDB;
+  padding-top: 80px; }
   @media (min-width: 724px) {
     main {
       flex-direction: row; } }
@@ -214,16 +222,15 @@ main {
     padding: 20px 40px 40px;
     text-align: left;
     background: #fff;
-    border-bottom: 4px solid #ccc;
-    border-radius: 6px;
+    border-radius: 35px;
     transition: all .5s;
     width: 45%; }
 
 .experience-card:hover {
-  border-color: #ff9904; }
+  box-shadow: 2px 7px 5px 0px #757575; }
 
 .experience-card a:hover {
-  color: orange; }
+  color: rgba(255, 193, 7, 0.9); }
 
 .portfolio-gallery {
   display: flex;
@@ -231,8 +238,9 @@ main {
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 1em;
   align-items: center;
+  background: #B2DFDB;
+  padding-top: 80px;
   flex-direction: column; }
   @media (min-width: 724px) {
     .portfolio-gallery {
@@ -245,10 +253,18 @@ main {
     align-items: center;
     margin: 0.25em .5em;
     flex-direction: column;
-    border-radius: 45px; }
+    border-radius: 45px;
+    background: white;
+    margin: 15px;
+    padding: 30px; }
     @media (min-width: 724px) {
       .portfolio-gallery .container {
-        width: 45%; } }
+        width: 371.25px;
+        height: 652px; } }
+    @media (min-width: 1024px) {
+      .portfolio-gallery .container {
+        width: 641.25px;
+        height: 496px; } }
     @media (min-width: 724px) {
       .portfolio-gallery .container h3 {
         margin-bottom: 2em; } }
@@ -262,6 +278,11 @@ main {
       @media (min-width: 724px) {
         .portfolio-gallery .container div {
           max-height: 250px; } }
+    .portfolio-gallery .container div a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      cursor: pointer; }
     .portfolio-gallery .container .WebDashboard {
       background-image: url("../images/WebDashboard.png"); }
     .portfolio-gallery .container .Online-Form {
@@ -279,5 +300,13 @@ main {
 
 .portfolio-gallery li:hover {
   flex-grow: 1.5; }
+
+.container:hover {
+  -webkit-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 7px 5px 0px #757575; }
+
+.container a {
+  color: #212121; }
 
 /*# sourceMappingURL=styles.css.map */

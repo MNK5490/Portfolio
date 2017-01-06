@@ -1,11 +1,14 @@
 #experience {
   color: white;
 }
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    background: #B2DFDB;
+    padding-top: 80px;
     @include media-query($tablet){
         flex-direction: row;
     }
@@ -14,8 +17,7 @@ main {
       padding: 20px 40px 40px;
       text-align: left;
       background: #fff;
-      border-bottom: 4px solid #ccc;
-      border-radius: 6px;
+      border-radius: 35px;
       transition: all .5s;
       width: 45%;
       @include media-query($tablet){
@@ -30,8 +32,8 @@ main {
 }
 
 .experience-card:hover {
-  border-color: #ff9904;
+    box-shadow: 2px 7px 5px 0px rgba(117, 117, 117, 1);
 }
 .experience-card a:hover {
-    color: orange;
+    color: rgba(255, 193, 7, 0.9);
 }

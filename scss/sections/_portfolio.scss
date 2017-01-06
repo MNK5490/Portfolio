@@ -4,8 +4,10 @@
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1em;
+    // margin-top: 1em;
     align-items: center;
+    background: #B2DFDB;
+    padding-top: 80px;
     flex-direction: column;
     @include media-query($tablet){
         flex-direction: row;
@@ -18,10 +20,17 @@
             align-items: center;
             margin: 0.25em .5em;
             flex-direction: column;
-            // background: orange;
             border-radius: 45px;
+            background: white;
+            margin: 15px;
+            padding: 30px;
             @include media-query($tablet){
-                width: 45%;
+                width: 371.25px;
+                height: 652px;
+            }
+            @include media-query($desktop){
+                width: 641.25px;
+                height: 496px;
             }
             h3 {
                 @include media-query($tablet){
@@ -38,6 +47,13 @@
                 @include media-query($tablet){
                     max-height: 250px;
                 }
+
+            }
+            div a {
+                display: block;
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
             }
             .WebDashboard {
                 background-image: url('../images/WebDashboard.png');
@@ -64,4 +80,14 @@
     }
 .portfolio-gallery li:hover {
     flex-grow: 1.5;
+}
+
+.container:hover {
+    -webkit-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 7px 5px 0px rgba(117, 117, 117, 1);
+}
+
+.container a {
+    color: #212121;
 }

@@ -2,12 +2,13 @@
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(255, 193, 7, .9);
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
   z-index: 3;
+  box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
 }
 .nav {
   display: flex;
@@ -32,7 +33,8 @@
 }
 .nav a {
   transition: all .5s;
+  color: white;
 }
-.nav a:hover {
-  color: orange;
+.main-nav a:hover {
+    color: #212121;
 }
