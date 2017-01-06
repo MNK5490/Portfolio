@@ -1,23 +1,34 @@
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background: #009688;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-  line-height: 1.5;
-  .location {
-      color: white;
+  line-height: 1.5; }
+  header .location {
+    color: white; }
+      .image-cropper {
+        margin-top: 50px;
+        height: 250px;
+        width: 250px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 6px solid #B2DFDB;
+        transition: all .5s;
+        box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+  header .image {
+    height: 100%;
+    position: absolute;
+    right: -50%;
+    width: auto;
+    margin: 0 auto;
+    padding-right: 50px;
   }
-  .image {
-      margin-top: 50px;
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 6px solid #B2DFDB;
-      transition: all .5s;
-      box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
-    }
-}
 
 .experience-layout {
     background-image: url(../images/sparc.jpg);
@@ -41,7 +52,7 @@ header {
 
 //Psuedo Elements
 
-header .image:hover {
+header .image-cropper:hover {
   transform: scale(1.5) rotate(10deg);
   webkit-transform: rotate(10deg);
   moz-transform: rotate(10deg);
