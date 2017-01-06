@@ -1,0 +1,66 @@
+.portfolio-gallery {
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    align-items: center;
+    flex-direction: column;
+    @include media-query($tablet){
+        flex-direction: row;
+        justify-content: center;
+    }
+        .container {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0.25em .5em;
+            flex-direction: column;
+            // background: orange;
+            border-radius: 45px;
+            @include media-query($tablet){
+                // width: 45%;
+            }
+            h3 {
+                margin: 0;
+            }
+            div {
+                background-size: contain;
+                height: 75%;
+                background-position: center;
+                width: 70%;
+                background-repeat: no-repeat;
+                @include media-query($tablet){
+                    // width: 45%;
+                    // height: 45%;
+
+                }
+            }
+            .WebDashboard {
+                background-image: url('../images/WebDashboard.png');
+            }
+            .Online-Form {
+                background-image: url('../images/online-Form.png');
+            }
+            .Accessibility {
+                background-image: url('../images/accessibile.png');
+            }
+            .VideoPlayer {
+                background-image: url('../images/videoplayer.png');
+            }
+            .Photo-Gallery {
+                background-image: url('../images/Photo-Gallery.png');
+            }
+            .SVG-Project {
+                background-image: url('../images/SVGs.png');
+            }
+            .ckendallart {
+                background-image: url('../images/ckendallart.png');
+            }
+        }
+    }
+.portfolio-gallery li:hover {
+    flex-grow: 1.5;
+}

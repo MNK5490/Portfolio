@@ -1,0 +1,41 @@
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 0px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    li {
+        display: flex;
+        justify-content: center;
+    }
+    a.social {
+      display: inline-block;
+      margin-left: 5px;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+      opacity: .4;
+      transition: all .5s;
+    }
+
+    a.linkedin {
+      background-image: url(../images/linkedin.svg);
+    }
+    a.github {
+      background-image: url(../images/github.svg);
+    }
+  }
+  .copyright {
+      top: -8px;
+      font-size: .75em;
+    }
+}
+// Pseudo States
+a.social:hover {
+  opacity: 1;
+}
