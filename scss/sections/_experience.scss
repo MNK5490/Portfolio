@@ -1,3 +1,37 @@
 #experience {
   color: white;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    @include media-query($tablet){
+        flex-direction: row;
+    }
+    .experience-card {
+      margin: 30px;
+      padding: 20px 40px 40px;
+      text-align: left;
+      background: #fff;
+      border-bottom: 4px solid #ccc;
+      border-radius: 6px;
+      transition: all .5s;
+      width: 45%;
+      @include media-query($tablet){
+        //   width: 500px;
+        //   height: 1400px;
+        }
+        @include media-query($desktop){
+            // width: 500px;
+            // height: 800px;
+          }
+    }
+}
+
+.experience-card:hover {
+  border-color: #ff9904;
+}
+.experience-card a:hover {
+    color: orange;
+}

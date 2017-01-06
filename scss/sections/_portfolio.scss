@@ -12,7 +12,7 @@
         justify-content: center;
     }
         .container {
-            width: 45%;
+            width: 95%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,28 +21,29 @@
             // background: orange;
             border-radius: 45px;
             @include media-query($tablet){
-                // width: 45%;
+                width: 45%;
             }
             h3 {
-                margin: 0;
+                @include media-query($tablet){
+                    margin-bottom: 2em;
+                }
             }
             div {
                 background-size: contain;
-                height: 75%;
+                height: 100%;
                 background-position: center;
-                width: 70%;
+                width: 100%;
+                max-height: 300px;
                 background-repeat: no-repeat;
                 @include media-query($tablet){
-                    // width: 45%;
-                    // height: 45%;
-
+                    max-height: 250px;
                 }
             }
             .WebDashboard {
                 background-image: url('../images/WebDashboard.png');
             }
             .Online-Form {
-                background-image: url('../images/online-Form.png');
+                background-image: url('../images/onlineForm.png');
             }
             .Accessibility {
                 background-image: url('../images/accessibile.png');

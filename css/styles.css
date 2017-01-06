@@ -201,6 +201,30 @@ ul.skills {
 #experience {
   color: white; }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; }
+  @media (min-width: 724px) {
+    main {
+      flex-direction: row; } }
+  main .experience-card {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    text-align: left;
+    background: #fff;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    transition: all .5s;
+    width: 45%; }
+
+.experience-card:hover {
+  border-color: #ff9904; }
+
+.experience-card a:hover {
+  color: orange; }
+
 .portfolio-gallery {
   display: flex;
   padding-left: 0;
@@ -215,25 +239,33 @@ ul.skills {
       flex-direction: row;
       justify-content: center; } }
   .portfolio-gallery .container {
-    width: 45%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0.25em .5em;
     flex-direction: column;
     border-radius: 45px; }
-    .portfolio-gallery .container h3 {
-      margin: 0; }
+    @media (min-width: 724px) {
+      .portfolio-gallery .container {
+        width: 45%; } }
+    @media (min-width: 724px) {
+      .portfolio-gallery .container h3 {
+        margin-bottom: 2em; } }
     .portfolio-gallery .container div {
       background-size: contain;
-      height: 75%;
+      height: 100%;
       background-position: center;
-      width: 70%;
+      width: 100%;
+      max-height: 300px;
       background-repeat: no-repeat; }
+      @media (min-width: 724px) {
+        .portfolio-gallery .container div {
+          max-height: 250px; } }
     .portfolio-gallery .container .WebDashboard {
       background-image: url("../images/WebDashboard.png"); }
     .portfolio-gallery .container .Online-Form {
-      background-image: url("../images/online-Form.png"); }
+      background-image: url("../images/onlineForm.png"); }
     .portfolio-gallery .container .Accessibility {
       background-image: url("../images/accessibile.png"); }
     .portfolio-gallery .container .VideoPlayer {
