@@ -218,13 +218,22 @@ main {
     main {
       flex-direction: row; } }
   main .experience-card {
-    margin: 30px;
-    padding: 20px 40px 40px;
     text-align: left;
     background: #fff;
     border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: all .5s;
-    width: 45%; }
+    width: 95%;
+    margin: 10px;
+    padding: 15px; }
+    @media (min-width: 724px) {
+      main .experience-card {
+        width: 45%;
+        margin: 30px;
+        padding: 20px 40px 40px; } }
 
 .experience-card:hover {
   box-shadow: 2px 7px 5px 0px #757575; }
@@ -308,5 +317,8 @@ main {
 
 .container a {
   color: #212121; }
+
+.container a:hover {
+  color: #ffc107; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -13,16 +13,21 @@ main {
         flex-direction: row;
     }
     .experience-card {
-      margin: 30px;
-      padding: 20px 40px 40px;
       text-align: left;
       background: #fff;
       border-radius: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       transition: all .5s;
-      width: 45%;
+      width: 95%;
+      margin: 10px;
+      padding: 15px;
       @include media-query($tablet){
-        //   width: 500px;
-        //   height: 1400px;
+          width: 45%;
+          margin: 30px;
+          padding: 20px 40px 40px;
         }
         @include media-query($desktop){
             // width: 500px;
