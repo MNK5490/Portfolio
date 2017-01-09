@@ -53,11 +53,11 @@ a:hover {
   transition: all .5s;
   @include media-query($tablet){
       width: 500px;
-      height: 1450px;
+      height: 1550px;
     }
     @include media-query($desktop){
         width: 500px;
-        height: 920px;
+        height: 980px;
       }
 }
 

@@ -53,11 +53,11 @@ a:hover {
   @media (min-width: 724px) {
     .card {
       width: 500px;
-      height: 1450px; } }
+      height: 1550px; } }
   @media (min-width: 1024px) {
     .card {
       width: 500px;
-      height: 920px; } }
+      height: 980px; } }
 
 .experience-card a {
   color: black; }
@@ -199,6 +199,8 @@ footer {
       background: url(../images/linkedin.svg) no-repeat; }
     footer ul a.github {
       background: url(../images/github.svg) no-repeat; }
+    footer ul a.mail {
+      background: url(../images/mail.svg) no-repeat; }
   footer .copyright {
     top: -8px;
     font-size: .75em; }
