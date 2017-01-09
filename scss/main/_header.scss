@@ -11,7 +11,7 @@ header {
   header .location {
     color: white; }
       .image-cropper {
-        margin-top: 50px;
+        margin: 70px 0px;
         height: 250px;
         width: 250px;
         position: relative;
@@ -58,5 +58,6 @@ header .image-cropper:hover {
   moz-transform: rotate(10deg);
   ms-transform: rotate(10deg);
   o-transform: rotate(10deg);
+  border: 6px solid #FFC107;
 
 }

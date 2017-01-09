@@ -10,7 +10,6 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   color: #222;
   background: #f7f5f0;
   // position: absolute;
@@ -26,6 +25,7 @@ body {
   }
   p,
   a,
+  li,
   span {
       font-family: $font-2;
   }
@@ -57,7 +57,7 @@ a:hover {
     }
     @include media-query($desktop){
         width: 500px;
-        height: 800px;
+        height: 900px;
       }
 }
 

@@ -8,26 +8,57 @@
   @include media-query($tablet) {
       flex-direction: row;
   }
+     p {
+      line-height: 1.6em;
+    }
+}
+    .skills,
+    .planned {
+        li  {
+          border-radius: 6px;
+          display: flex;
+          background: #009688;
+          color: white;
+          padding: 5px 10px;
+          width: 100%;
+          margin: 2px;
+
+          a {
+              color: white;
+              text-align: left;
+              height: 100%;
+              width: 100%;
+              cursor: pointer;
+          }
+        }
+    }
+    .goals-header {
+        display: flex;
+        align-items: center;
+        h4 {
+            margin-right: auto;
+        }
+    }
+    .planned {
+        li {
+            background: #FFC107;
+        }
+    }
+.planned li:hover,
+#frameworks li:hover,
+#AdobeSuite li:hover {
+    background: white;
+    border: 1px solid #FFC107;
+    color: #FFC107;
+    cursor: default;
+    a {
+    color: #FFC107;
+    cursor: pointer;
+    }
 }
 
-.flex p {
-  line-height: 1.6em;
-}
-
-ul.skills {
-  padding: 0;
-  text-align: center;
-}
-
-.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  background: #009688;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
-}
-
-.skills li:nth-child(odd) {
-  background: #FFC107;
+.skills li:hover {
+    background: white;
+    border: 1px solid #009688;
+    color: #009688;
 }

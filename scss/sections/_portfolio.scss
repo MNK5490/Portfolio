@@ -4,7 +4,6 @@
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    // margin-top: 1em;
     align-items: center;
     background: #B2DFDB;
     padding-top: 80px;
@@ -14,23 +13,77 @@
         justify-content: center;
     }
         .container {
-            width: 95%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0.25em .5em;
             flex-direction: column;
             border-radius: 45px;
+            flex-wrap: wrap;
             background: white;
-            margin: 15px;
-            padding: 30px;
+
             @include media-query($tablet){
-                width: 371.25px;
-                height: 652px;
+                // width: 371.25px;
+                // height: 652px;
             }
             @include media-query($desktop){
-                width: 641.25px;
-                height: 496px;
+                // width: 641.25px;
+                // height: 496px;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding-left: 0;
+                flex-wrap: wrap;
+                justify-content: center;
+                // width: 100%;
+
+                li {
+                    width: 95%;
+                    list-style-type: none;
+                    // border: 1px solid red;
+                    display: flex;
+                    padding: 10px;
+                    margin: 10px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(178, 223, 219, 0.2);
+                    border-radius: 35px;
+                    @include media-query($tablet){
+                        flex-direction: column;
+                        padding: 10px 20px;
+                    }
+                    @include media-query($desktop){
+                        padding: 10px 50px;
+                        width: 45%;
+                    }
+
+                    a {
+                        color: #212121;
+                    }
+
+                    img {
+                        width: 350px;
+                        height: 300px;
+                        @include media-query($tablet){
+                            width: 600px;
+                            height: 450px;
+                        }
+                        @include media-query($desktop){
+                            width: 480px;
+                            height: 290px;
+                        }
+                    }
+                    p {
+                        height: 250px;
+                        padding: 15px;
+                        @include media-query($tablet){
+                            height: 150px;
+
+                        }
+                    }
+                }
             }
             h3 {
                 @include media-query($tablet){
@@ -55,42 +108,40 @@
                 width: 100%;
                 cursor: pointer;
             }
-            .WebDashboard {
-                background-image: url('../images/WebDashboard.png');
-            }
-            .Online-Form {
-                background-image: url('../images/onlineForm.png');
-            }
-            .Accessibility {
-                background-image: url('../images/accessibile.png');
-            }
-            .VideoPlayer {
-                background-image: url('../images/videoplayer.png');
-            }
-            .Photo-Gallery {
-                background-image: url('../images/Photo-Gallery.png');
-            }
-            .SVG-Project {
-                background-image: url('../images/SVGs.png');
-            }
-            .ckendallart {
-                background-image: url('../images/ckendallart.png');
-            }
+            // .WebDashboard {
+            //     background-image: url('../images/WebDashboard.png');
+            // }
+            // .Online-Form {
+            //     background-image: url('../images/onlineForm.png');
+            // }
+            // .Accessibility {
+            //     background-image: url('../images/accessibile.png');
+            // }
+            // .VideoPlayer {
+            //     background-image: url('../images/videoplayer.png');
+            // }
+            // .Photo-Gallery {
+            //     background-image: url('../images/Photo-Gallery.png');
+            // }
+            // .SVG-Project {
+            //     background-image: url('../images/SVGs.png');
+            // }
+            // .ckendallart {
+            //     background-image: url('../images/ckendallart.png');
+            // }
         }
     }
-.portfolio-gallery li:hover {
-    flex-grow: 1.5;
-}
 
-.container:hover {
+.container li:hover {
+    @include media-query($tablet){
     -webkit-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 7px 5px 0px rgba(117, 117, 117, 1);
+    border: 3px solid #009688;
+    }
 }
 
-.container a {
-    color: #212121;
-}
+
 .container a:hover {
     color: rgba(255, 193, 7, 1);
 }

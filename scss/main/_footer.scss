@@ -21,13 +21,20 @@ footer {
       background-size: 30px 30px;
       opacity: .4;
       transition: all .5s;
+      img {
+          width: 100%;
+      }
+      @include media-query($tablet) {
+          width: 80px;
+          height: 80px;
+      }
     }
 
     a.linkedin {
-      background-image: url(../images/linkedin.svg);
+      background: url(../images/linkedin.svg) no-repeat;
     }
     a.github {
-      background-image: url(../images/github.svg);
+      background: url(../images/github.svg) no-repeat;
     }
   }
   .copyright {
