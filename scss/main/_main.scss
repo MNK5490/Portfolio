@@ -53,11 +53,11 @@ a:hover {
   transition: all .5s;
   @include media-query($tablet){
       width: 500px;
-      height: 1400px;
+      height: 1450px;
     }
     @include media-query($desktop){
         width: 500px;
-        height: 900px;
+        height: 920px;
       }
 }
 
@@ -67,4 +67,14 @@ a:hover {
 
 .experience-card a:hover {
     color: rgba(255, 193, 7, 1);
+}
+
+.flex:nth-child(2){
+    @include media-query($tablet){
+    border: 1px solid red;
+}
+    @include media-query($desktop){
+        width: 500px;
+        height: 920px;
+    }
 }

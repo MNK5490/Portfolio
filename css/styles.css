@@ -53,17 +53,25 @@ a:hover {
   @media (min-width: 724px) {
     .card {
       width: 500px;
-      height: 1400px; } }
+      height: 1450px; } }
   @media (min-width: 1024px) {
     .card {
       width: 500px;
-      height: 900px; } }
+      height: 920px; } }
 
 .experience-card a {
   color: black; }
 
 .experience-card a:hover {
   color: #ffc107; }
+
+@media (min-width: 724px) {
+  .flex:nth-child(2) {
+    border: 1px solid red; } }
+@media (min-width: 1024px) {
+  .flex:nth-child(2) {
+    width: 500px;
+    height: 920px; } }
 
 header {
   display: flex;
