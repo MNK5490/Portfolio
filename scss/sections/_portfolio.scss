@@ -6,9 +6,10 @@
     flex-wrap: wrap;
     align-items: center;
     background: #B2DFDB;
-    padding-top: 80px;
+    padding: 80px 0 26px 0;
     flex-direction: column;
     border-radius: 45px;
+}
     .container {
         display: flex;
         justify-content: center;
@@ -18,13 +19,11 @@
         flex-wrap: wrap;
         background: white;
         width: 95%;
-        div {
-            background-size: contain;
-            background-position: center;
-            width: 100%;
-            background-repeat: no-repeat;
-            @include media-query($tablet){
-            }
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
         }
         h2 a {
             cursor: pointer;
@@ -62,6 +61,7 @@
                     padding: 10px 20px;
                     width: 45%;
                 }
+            }
 
                 img {
                     width: 200px;
@@ -75,22 +75,21 @@
                         height: 300px;
                     }
                 }
-            }
 
                 p {
-                    height: 100%;
+                    height: 200px;
                     padding: 15px;
+                    @include media-query($tablet){
+                        height: 350px;
                     }
-                }
-            }
-            h3 {
-                @include media-query($tablet){
-                    margin-bottom: 2em;
-                }
-            }
-        }
+                    @include media-query($desktop){
+                        height: 250px;
+                    }
+                    }
+                } // end of the <ul>
+            } // end of the .container
 
-
+// PSUEDO STATES
 .container li:hover {
     @include media-query($tablet){
     -webkit-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
@@ -102,5 +101,7 @@
 
 
 .container h2:hover {
-    border: 1px solid red;
+    a {
+    color: #FFC107;
+}
 }
