@@ -51,13 +51,15 @@ a:hover {
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
   border-radius: 6px;
   transition: all .5s;
+  width: 95%;
+  height:95%;
   @include media-query($tablet){
       width: 500px;
-      height: 1550px;
+      height: 1475px;
     }
     @include media-query($desktop){
         width: 500px;
-        height: 980px;
+        height: 1125px;
       }
 }
 

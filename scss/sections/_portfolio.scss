@@ -1,4 +1,4 @@
-.portfolio-gallery {
+.portfolio-body {
     display: flex;
     padding-left: 0;
     width: 100%;
@@ -8,80 +8,78 @@
     background: #B2DFDB;
     padding-top: 80px;
     flex-direction: column;
-    @include media-query($tablet){
-        flex-direction: row;
+    border-radius: 45px;
+    .container {
+        display: flex;
         justify-content: center;
-    }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            border-radius: 45px;
-            flex-wrap: wrap;
-            background: white;
-
+        align-items: center;
+        flex-direction: column;
+        border-radius: 45px;
+        flex-wrap: wrap;
+        background: white;
+        width: 95%;
+        div {
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            background-repeat: no-repeat;
             @include media-query($tablet){
-                // width: 371.25px;
-                // height: 652px;
             }
-            @include media-query($desktop){
-                // width: 641.25px;
-                // height: 496px;
-            }
-            ul {
+        }
+        h2 a {
+            cursor: pointer;
+            color: #212121;
+            @include media-query($tablet){
+                height: 105px;
                 display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                padding-left: 0;
-                flex-wrap: wrap;
+                align-items: center;
                 justify-content: center;
-                // width: 100%;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-left: 0;
+            flex-wrap: wrap;
+            width: 95%;
+            justify-content: center;
+            @include media-query($tablet){
+                flex-direction: row;
+            }
+            // width: 100%;
+            li {
+                list-style-type: none;
+                display: flex;
+                padding: 10px;
+                margin: 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: rgba(178, 223, 219, 0.2);
+                border-radius: 35px;
+                @include media-query($tablet){
+                    padding: 10px 20px;
+                    width: 45%;
+                }
 
-                li {
-                    width: 95%;
-                    list-style-type: none;
-                    // border: 1px solid red;
-                    display: flex;
-                    padding: 10px;
-                    margin: 10px;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    background: rgba(178, 223, 219, 0.2);
-                    border-radius: 35px;
+                img {
+                    width: 200px;
+                    height: 150px;
                     @include media-query($tablet){
-                        flex-direction: column;
-                        padding: 10px 20px;
+                        width: 250px;
+                        height: 175px;
                     }
                     @include media-query($desktop){
-                        padding: 10px 50px;
-                        width: 45%;
-                    }
-
-                    a {
-                        color: #212121;
-                    }
-
-                    img {
-                        width: 350px;
+                        width: 400px;
                         height: 300px;
-                        @include media-query($tablet){
-                            width: 600px;
-                            height: 450px;
-                        }
-                        @include media-query($desktop){
-                            width: 480px;
-                            height: 290px;
-                        }
                     }
-                    p {
-                        height: 250px;
-                        padding: 15px;
-                        @include media-query($tablet){
-                            height: 150px;
+                }
+            }
 
-                        }
+                p {
+                    height: 100%;
+                    padding: 15px;
                     }
                 }
             }
@@ -90,47 +88,8 @@
                     margin-bottom: 2em;
                 }
             }
-            div {
-                background-size: contain;
-                height: 100%;
-                background-position: center;
-                width: 100%;
-                max-height: 300px;
-                background-repeat: no-repeat;
-                @include media-query($tablet){
-                    max-height: 250px;
-                }
-
-            }
-            div a {
-                display: block;
-                height: 100%;
-                width: 100%;
-                cursor: pointer;
-            }
-            // .WebDashboard {
-            //     background-image: url('../images/WebDashboard.png');
-            // }
-            // .Online-Form {
-            //     background-image: url('../images/onlineForm.png');
-            // }
-            // .Accessibility {
-            //     background-image: url('../images/accessibile.png');
-            // }
-            // .VideoPlayer {
-            //     background-image: url('../images/videoplayer.png');
-            // }
-            // .Photo-Gallery {
-            //     background-image: url('../images/Photo-Gallery.png');
-            // }
-            // .SVG-Project {
-            //     background-image: url('../images/SVGs.png');
-            // }
-            // .ckendallart {
-            //     background-image: url('../images/ckendallart.png');
-            // }
         }
-    }
+
 
 .container li:hover {
     @include media-query($tablet){
