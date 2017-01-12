@@ -29,7 +29,7 @@
             cursor: pointer;
             color: #212121;
             @include media-query($tablet){
-                height: 105px;
+                // height: 105px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -59,31 +59,33 @@
                 border-radius: 35px;
                 @include media-query($tablet){
                     padding: 10px 20px;
+                    border: 1px solid #009688;
                     width: 45%;
                 }
             }
 
                 img {
-                    width: 200px;
-                    height: 150px;
+                    width: auto;
+                    max-width: 95%;
                     @include media-query($tablet){
-                        width: 250px;
-                        height: 175px;
+                        width: auto;
                     }
                     @include media-query($desktop){
-                        width: 400px;
-                        height: 300px;
+                        width: auto;
                     }
                 }
 
                 p {
-                    height: 400px;
-                    padding: 15px;
+                    font-size: 14px;
+                    margin-top: 5px;
+                    height: 51px;
+                    color: #757575;
                     @include media-query($tablet){
-                        height: 350px;
+                        margin-top: 10px;
                     }
                     @include media-query($desktop){
-                        height: 250px;
+                        margin-top: 16px;
+                        height: 35px;
                     }
                     }
                 } // end of the <ul>
@@ -92,16 +94,15 @@
 // PSUEDO STATES
 .container li:hover {
     @include media-query($tablet){
+    box-shadow: 2px 7px 5px 0px rgba(117, 117, 117, 1);
     -webkit-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 7px 5px 0px rgba(117, 117, 117, 1);
-    border: 3px solid #009688;
     }
 }
 
 
-.container h2:hover {
-    a {
-    color: #FFC107;
-}
-}
+// .container h2:hover {
+//     a {
+//     color: #FFC107;
+// }
+// }

@@ -168,6 +168,11 @@ footer {
   footer .copyright {
     top: -8px;
     font-size: .75em; }
+    @media (min-width: 724px) {
+      footer .copyright {
+        font-size: 1em; } }
+  footer a {
+    color: black; }
 
 a.social:hover {
   opacity: 1; }
@@ -314,7 +319,6 @@ main {
     color: #212121; }
     @media (min-width: 724px) {
       .container h2 a {
-        height: 105px;
         display: flex;
         align-items: center;
         justify-content: center; } }
@@ -342,36 +346,34 @@ main {
       @media (min-width: 724px) {
         .container ul li {
           padding: 10px 20px;
+          border: 1px solid #009688;
           width: 45%; } }
     .container ul img {
-      width: 200px;
-      height: 150px; }
+      width: auto;
+      max-width: 95%; }
       @media (min-width: 724px) {
         .container ul img {
-          width: 250px;
-          height: 175px; } }
+          width: auto; } }
       @media (min-width: 1050px) {
         .container ul img {
-          width: 400px;
-          height: 300px; } }
+          width: auto; } }
     .container ul p {
-      height: 400px;
-      padding: 15px; }
+      font-size: 14px;
+      margin-top: 5px;
+      height: 51px;
+      color: #757575; }
       @media (min-width: 724px) {
         .container ul p {
-          height: 350px; } }
+          margin-top: 10px; } }
       @media (min-width: 1050px) {
         .container ul p {
-          height: 250px; } }
+          margin-top: 16px;
+          height: 35px; } }
 
 @media (min-width: 724px) {
   .container li:hover {
-    -webkit-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 2px 7px 5px 0px #757575;
-    border: 3px solid #009688; } }
-
-.container h2:hover a {
-  color: #FFC107; }
+    -webkit-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.75); } }
 
 /*# sourceMappingURL=styles.css.map */

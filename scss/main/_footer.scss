@@ -44,6 +44,13 @@ footer {
   .copyright {
       top: -8px;
       font-size: .75em;
+      @include media-query($tablet){
+          font-size: 1em;
+      }
+    }
+
+    a {
+        color: black;
     }
 }
 // Pseudo States
