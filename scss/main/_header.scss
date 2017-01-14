@@ -6,10 +6,13 @@ header {
   background: #009688;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 175px;
   line-height: 1.5;
+  @include media-query($tablet){
+      padding-top: 80px;
+  }
       .image-cropper {
-        margin: 70px 0px;
+        margin: 70px 0px 0px 0px;
         height: 250px;
         width: 250px;
         position: relative;
@@ -19,44 +22,35 @@ header {
         transition: all .5s;
         box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
       }
-  .image {
-    height: 100%;
-    position: absolute;
-    right: -50%;
-    width: auto;
-    margin: 0 auto;
-    padding-right: 50px;
+      .image {
+        height: 100%;
+        position: absolute;
+        right: -50%;
+        width: auto;
+        margin: 0 auto;
+        padding-right: 50px;
+      }
+      .resume {
+          padding: 15px 50px;
+          border-radius: 20px;
+          margin: 100px 0px 45px 0px;
+          border: 2px solid white;
+      a {
+          color: white;
+          cursor: pointer;
+          @include media-query($tablet) {
+              padding: 25px;
+          }
+      }
   }
-  }
-
-.experience-layout {
-    background-image: url(../images/sparc.jpg);
-    color: #ff9904;
-    // display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    display: none;
-}
-
-.experience-header {
-    padding: 15px;
-    border: 1px solid orange;
-    border-radius: 15px;
-    background: white;
-}
-
-.portfolio-header {
-    display: none;
 }
 
 //Psuedo Elements
 
-header .image-cropper:hover {
-  transform: scale(1.5) rotate(10deg);
-  webkit-transform: rotate(10deg);
-  moz-transform: rotate(10deg);
-  ms-transform: rotate(10deg);
-  o-transform: rotate(10deg);
-  border: 6px solid #FFC107;
-
+.resume:hover {
+    background: white;
+    border: 3px solid #FFC107;
+    a {
+        color:#FFC107;
+    }
 }

@@ -2,15 +2,17 @@
   color: white;
 }
 
-main {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    padding-top: 175px;
     background: #B2DFDB;
-    padding-top: 80px;
     @include media-query($tablet){
         flex-direction: row;
+        padding-top: 80px;
+
     }
     .experience-card {
       text-align: left;
@@ -24,6 +26,7 @@ main {
       width: 95%;
       margin: 10px;
       padding: 15px;
+      color: rgba(117, 117, 117, 1);
       @include media-query($tablet){
           width: 45%;
           margin: 30px;
@@ -33,12 +36,64 @@ main {
             // width: 500px;
             // height: 800px;
           }
+          h2,
+          h3,
+          h4 {
+              margin: 5px;
+              display:flex;
+              align-items: center;
+              justify-content: center;
+          }
+          h2 {
+              @include media-query($tablet){
+                  height: 105px;
+              }
+              @include media-query($desktop){
+                  height: 68px;
+              }
+          }
+          h2 a {
+              color: black;
+          }
+          .experience-header {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              text-align: center;
+              @include media-query($tablet){
+                  height: 265px;
+              }
+              @include media-query($desktop){
+                  height: 200px;
+              }
+          }
+          .experience-title {
+              @include media-query($tablet){
+                  height: 100px;
+              }
+              @include media-query($desktop){
+                  height: 64px;
+                  margin: 15px;
+              }
+          }
+          ul.experience-summary {
+              list-style: square;
+              @include media-query($tablet){
+                  height: 405px;
+              }
+              @include media-query($desktop){
+                  height: 200px;
+              }
+              li {
+                  margin: 10px;
+              }
+          }
     }
 }
 
 .experience-card:hover {
-    box-shadow: 2px 7px 5px 0px rgba(117, 117, 117, 1);
+    box-shadow: 2px 7px 5px 0px;
 }
-.experience-card a:hover {
-    color: rgba(255, 193, 7, 0.9);
+.experience-card h2 a:hover {
+    color: #FFC107;
 }

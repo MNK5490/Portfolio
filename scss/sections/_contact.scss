@@ -1,0 +1,110 @@
+.contact-wrapper {
+    padding-top: 175px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B2DFDB;
+    flex-direction: column;
+    @include media-query($tablet){
+        padding-top: 80px
+    }
+    @include media-query($desktop){
+        flex-direction: row;
+    }
+    .headshot {
+        padding: 15px;
+        border-radius: 200px;
+        width: 100%;
+        margin: 31.8px 0px;
+        @include media-query($desktop){
+            margin-right: auto;
+            width: 25%;
+        }
+    }
+    img {
+        max-width: 50%;
+        width: auto;
+        border-radius: 200px;
+        @include media-query($tablet){
+            max-width: 25%;
+        }
+        @include media-query($desktop){
+            margin-right: auto;
+            max-width: 100%;
+
+        }
+    }
+}
+
+.contact-form {
+    width: 100%;
+    @include media-query($desktop){
+        width: 65%;
+    }
+    h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+    margin-top: 0px;
+    @include media-query($desktop){
+        margin-left: -10%;
+        }
+    }
+}
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        fieldset {
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            input {
+                width: 100%;
+                margin: 6px auto;
+                line-height: 2.5em;
+                text-indent: 10px;
+                border: none;
+                border-radius: 5px;
+                background: rgba(230, 230, 230, 1);
+                @include media-query($tablet){
+                    width: 75%;
+                }
+                @include media-query($desktop){
+                    margin: 6px;
+                }
+            }
+            .textarea {
+                width: 100%;
+                text-indent: 10px;
+                border: none;
+                border-radius: 5px;
+                margin: 6px auto;
+                height: 150px;
+                background: rgba(230, 230, 230, 1);
+                @include media-query($tablet){
+                    width: 75%;
+                }
+                @include media-query($desktop){
+                    margin: 6px;
+                }
+            }
+            button {
+                margin: 6px auto;
+                border-radius: 5px;
+                width: 100%;
+                background: rgba(0, 150, 136, .85);
+                color: white;
+                @include media-query($tablet){
+                    width: 75%;
+                }
+                @include media-query($desktop){
+                    margin: 6px;
+                }
+            }
+        }
+    }

@@ -50,10 +50,13 @@ header {
   background: #009688;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 175px;
   line-height: 1.5; }
+  @media (min-width: 724px) {
+    header {
+      padding-top: 80px; } }
   header .image-cropper {
-    margin: 70px 0px;
+    margin: 70px 0px 0px 0px;
     height: 250px;
     width: 250px;
     position: relative;
@@ -69,30 +72,23 @@ header {
     width: auto;
     margin: 0 auto;
     padding-right: 50px; }
+  header .resume {
+    padding: 15px 50px;
+    border-radius: 20px;
+    margin: 100px 0px 45px 0px;
+    border: 2px solid white; }
+    header .resume a {
+      color: white;
+      cursor: pointer; }
+      @media (min-width: 724px) {
+        header .resume a {
+          padding: 25px; } }
 
-.experience-layout {
-  background-image: url(../images/sparc.jpg);
-  color: #ff9904;
-  justify-content: center;
-  align-items: flex-start;
-  display: none; }
-
-.experience-header {
-  padding: 15px;
-  border: 1px solid orange;
-  border-radius: 15px;
-  background: white; }
-
-.portfolio-header {
-  display: none; }
-
-header .image-cropper:hover {
-  transform: scale(1.5) rotate(10deg);
-  webkit-transform: rotate(10deg);
-  moz-transform: rotate(10deg);
-  ms-transform: rotate(10deg);
-  o-transform: rotate(10deg);
-  border: 6px solid #FFC107; }
+.resume:hover {
+  background: white;
+  border: 3px solid #FFC107; }
+  .resume:hover a {
+    color: #FFC107; }
 
 .main-nav {
   width: 100%;
@@ -111,15 +107,20 @@ header .image-cropper:hover {
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
-  padding: 0; }
-
-.name {
-  color: white; }
+  padding: 0;
+  flex-direction: column; }
+  @media (min-width: 724px) {
+    .nav {
+      flex-direction: row; } }
 
 .nav .name {
   display: block;
-  margin-right: auto;
-  color: white; }
+  color: white;
+  margin-bottom: auto;
+  font-size: larger; }
+  @media (min-width: 724px) {
+    .nav .name {
+      margin-right: auto; } }
 
 .nav li {
   padding: 5px 10px 10px 10px; }
@@ -134,7 +135,8 @@ header .image-cropper:hover {
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 0px; }
+  padding: 20px 0 40px 0px;
+  background: #00796B; }
   footer ul {
     list-style-type: none;
     margin: 0;
@@ -172,7 +174,7 @@ footer {
       footer .copyright {
         font-size: 1em; } }
   footer a {
-    color: black; }
+    color: white; }
 
 a.social:hover {
   opacity: 1; }
@@ -198,9 +200,9 @@ a.social:hover {
     width: 95%; }
     @media (min-width: 724px) {
       .flex .card {
-        width: 500px;
-        height: 1475px; } }
-    @media (min-width: 1050px) {
+        width: 49%;
+        height: 1565px; } }
+    @media (min-width: 1024px) {
       .flex .card {
         width: 500px;
         height: 1125px; } }
@@ -254,17 +256,18 @@ a.social:hover {
 #experience {
   color: white; }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background: #B2DFDB;
-  padding-top: 80px; }
+  padding-top: 175px;
+  background: #B2DFDB; }
   @media (min-width: 724px) {
-    main {
-      flex-direction: row; } }
-  main .experience-card {
+    .main {
+      flex-direction: row;
+      padding-top: 80px; } }
+  .main .experience-card {
     text-align: left;
     background: #fff;
     border-radius: 35px;
@@ -275,53 +278,177 @@ main {
     transition: all .5s;
     width: 95%;
     margin: 10px;
-    padding: 15px; }
+    padding: 15px;
+    color: #757575; }
     @media (min-width: 724px) {
-      main .experience-card {
+      .main .experience-card {
         width: 45%;
         margin: 30px;
         padding: 20px 40px 40px; } }
+    .main .experience-card h2,
+    .main .experience-card h3,
+    .main .experience-card h4 {
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    @media (min-width: 724px) {
+      .main .experience-card h2 {
+        height: 105px; } }
+    @media (min-width: 1024px) {
+      .main .experience-card h2 {
+        height: 68px; } }
+    .main .experience-card h2 a {
+      color: black; }
+    .main .experience-card .experience-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      @media (min-width: 724px) {
+        .main .experience-card .experience-header {
+          height: 265px; } }
+      @media (min-width: 1024px) {
+        .main .experience-card .experience-header {
+          height: 200px; } }
+    @media (min-width: 724px) {
+      .main .experience-card .experience-title {
+        height: 100px; } }
+    @media (min-width: 1024px) {
+      .main .experience-card .experience-title {
+        height: 64px;
+        margin: 15px; } }
+    .main .experience-card ul.experience-summary {
+      list-style: square; }
+      @media (min-width: 724px) {
+        .main .experience-card ul.experience-summary {
+          height: 405px; } }
+      @media (min-width: 1024px) {
+        .main .experience-card ul.experience-summary {
+          height: 200px; } }
+      .main .experience-card ul.experience-summary li {
+        margin: 10px; }
 
 .experience-card:hover {
-  box-shadow: 2px 7px 5px 0px #757575; }
+  box-shadow: 2px 7px 5px 0px; }
 
-.experience-card a:hover {
-  color: rgba(255, 193, 7, 0.9); }
+.experience-card h2 a:hover {
+  color: #FFC107; }
 
-.portfolio-body {
-  display: flex;
-  padding-left: 0;
+.contact-wrapper {
+  padding-top: 175px;
   width: 100%;
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   background: #B2DFDB;
-  padding: 80px 0 26px 0;
-  flex-direction: column;
-  border-radius: 45px; }
+  flex-direction: column; }
+  @media (min-width: 724px) {
+    .contact-wrapper {
+      padding-top: 80px; } }
+  @media (min-width: 1024px) {
+    .contact-wrapper {
+      flex-direction: row; } }
+  .contact-wrapper .headshot {
+    padding: 15px;
+    border-radius: 200px;
+    width: 100%;
+    margin: 31.8px 0px; }
+    @media (min-width: 1024px) {
+      .contact-wrapper .headshot {
+        margin-right: auto;
+        width: 25%; } }
+  .contact-wrapper img {
+    max-width: 50%;
+    width: auto;
+    border-radius: 200px; }
+    @media (min-width: 724px) {
+      .contact-wrapper img {
+        max-width: 25%; } }
+    @media (min-width: 1024px) {
+      .contact-wrapper img {
+        margin-right: auto;
+        max-width: 100%; } }
+
+.contact-form {
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .contact-form {
+      width: 65%; } }
+  .contact-form h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+    margin-top: 0px; }
+    @media (min-width: 1024px) {
+      .contact-form h1 {
+        margin-left: -10%; } }
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .form fieldset {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .form fieldset input {
+      width: 100%;
+      margin: 6px auto;
+      line-height: 2.5em;
+      text-indent: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #e6e6e6; }
+      @media (min-width: 724px) {
+        .form fieldset input {
+          width: 75%; } }
+      @media (min-width: 1024px) {
+        .form fieldset input {
+          margin: 6px; } }
+    .form fieldset .textarea {
+      width: 100%;
+      text-indent: 10px;
+      border: none;
+      border-radius: 5px;
+      margin: 6px auto;
+      height: 150px;
+      background: #e6e6e6; }
+      @media (min-width: 724px) {
+        .form fieldset .textarea {
+          width: 75%; } }
+      @media (min-width: 1024px) {
+        .form fieldset .textarea {
+          margin: 6px; } }
+    .form fieldset button {
+      margin: 6px auto;
+      border-radius: 5px;
+      width: 100%;
+      background: rgba(0, 150, 136, 0.85);
+      color: white; }
+      @media (min-width: 724px) {
+        .form fieldset button {
+          width: 75%; } }
+      @media (min-width: 1024px) {
+        .form fieldset button {
+          margin: 6px; } }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 45px;
   flex-wrap: wrap;
+  padding: 175px 0 26px 0;
   background: white;
-  width: 95%; }
-  .container h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 0; }
-  .container h2 a {
-    cursor: pointer;
-    color: #212121; }
-    @media (min-width: 724px) {
-      .container h2 a {
-        display: flex;
-        align-items: center;
-        justify-content: center; } }
+  width: 100%;
+  background: #B2DFDB; }
+  @media (min-width: 724px) {
+    .container {
+      padding: 80px 0 26px 0; } }
   .container ul {
     display: flex;
     flex-direction: column;
@@ -333,6 +460,19 @@ main {
     @media (min-width: 724px) {
       .container ul {
         flex-direction: row; } }
+    .container ul h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0; }
+    .container ul h2 a {
+      cursor: pointer;
+      color: #212121; }
+      @media (min-width: 724px) {
+        .container ul h2 a {
+          display: flex;
+          align-items: center;
+          justify-content: center; } }
     .container ul li {
       list-style-type: none;
       display: flex;
@@ -341,7 +481,7 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: rgba(178, 223, 219, 0.2);
+      background: white;
       border-radius: 35px; }
       @media (min-width: 724px) {
         .container ul li {
@@ -354,7 +494,7 @@ main {
       @media (min-width: 724px) {
         .container ul img {
           width: auto; } }
-      @media (min-width: 1050px) {
+      @media (min-width: 1024px) {
         .container ul img {
           width: auto; } }
     .container ul p {
@@ -365,7 +505,7 @@ main {
       @media (min-width: 724px) {
         .container ul p {
           margin-top: 10px; } }
-      @media (min-width: 1050px) {
+      @media (min-width: 1024px) {
         .container ul p {
           margin-top: 16px;
           height: 35px; } }

@@ -18,15 +18,21 @@
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-}
-.name {
+  flex-direction: column;
+  @include media-query($tablet){
+      flex-direction: row;
+  }
 
-  color: white;
 }
+
 .nav .name {
     display: block;
-    margin-right: auto;
     color: white;
+    margin-bottom: auto;
+    font-size: larger;
+    @include media-query($tablet){
+        margin-right: auto;
+}
 
 }
 .nav li {

@@ -18,8 +18,8 @@
     transition: all .5s;
     width: 95%;
     @include media-query($tablet){
-        width: 500px;
-        height: 1475px;
+        width: 49%;
+        height: 1565px;
       }
       @include media-query($desktop){
           width: 500px;
