@@ -20,16 +20,16 @@
     </div>
     <div class="contact-wrapper">
         <div class="headshot">
-            <img src="images/headshot.jpg" alt="This is my headshot" />
+            <img src="images/Headshot.jpg" alt="This is my headshot" />
         </div>
             <div class="contact-form">
                 <h1>Make my day...</h1>
                 <form class="form" action="https://formspree.io/maxwellnkendall@gmail.com" method="POST">
                     <fieldset class="pure-group">
-                        <input name="users-name" type="text" class="pure-input-1-2 your-name" placeholder="Your Name">
-                        <input name="_replyto" type="text" class="pure-input-1-2 email" placeholder="Your Email">
+                        <input name="users-name" type="text" class="pure-input-1-2 your-name" placeholder="Your Name" required>
+                        <input name="_replyto" type="email" class="pure-input-1-2 email" placeholder="Your Email" required>
                         <input name="_subject" type="text" class="pure-input-1-2 subject" placeholder="The Subject Line">
-                        <textarea name="message" class="pure-input-1-2 textarea" placeholder="Your Message"></textarea>
+                        <textarea name="message" class="pure-input-1-2 textarea" placeholder="Your Message" required></textarea>
                         <button type="submit" class="pure-button">Send</button>
                         <input type="hidden" name="_next" value="https://maxwellkendall.github.io/thanks.html" style="display:none"/>
                     </fieldset>
@@ -46,5 +46,6 @@
       </ul>
       <p class="copyright"><a href="mailto:maxwellnkendall@gmail.com">MaxwellNKendall@gmail.com</a></p>
     </footer>
+    <script src="js/setValiditiy.js"></script>
 </body>
 </html>

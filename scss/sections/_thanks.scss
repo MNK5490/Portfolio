@@ -1,0 +1,9 @@
+.main {
+    padding-top: 175px;
+    background: #B2DFDB;
+    @include media-query($tablet){
+        flex-direction: row;
+        padding-top: 80px;
+
+    }
+}

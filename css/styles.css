@@ -516,4 +516,12 @@ a.social:hover {
     -webkit-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.75); } }
 
+.main {
+  padding-top: 175px;
+  background: #B2DFDB; }
+  @media (min-width: 724px) {
+    .main {
+      flex-direction: row;
+      padding-top: 80px; } }
+
 /*# sourceMappingURL=styles.css.map */
