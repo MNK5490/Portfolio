@@ -27,7 +27,7 @@ resume.addEventListener("mouseleave", function(){
         image.style.border= "6px solid #B2DFDB";
         resumeText.style.color = "white";
         resume.style.border = "2px solid white";
-        resume.style.background = "#00967F";
+        resume.style.background = "#009688";
     });
 
     // (2) Adding Image Styles
@@ -52,5 +52,5 @@ image.addEventListener("mouseleave", function(){
     image.style.border= "6px solid #B2DFDB";
     resumeText.style.color = "white";
     resume.style.border = "2px solid white";
-    resume.style.background = "#00967F";
+    resume.style.background = "#009688";
 });
