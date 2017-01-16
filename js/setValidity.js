@@ -1,25 +1,18 @@
-var form = document.getElementsByClassName('form')[0];
+var forms = document.getElementsByTagName('form')[0];
 var email = document.getElementsByClassName("email")[0];
 var yourName = document.getElementsByClassName("your-name")[0];
 var message = document.getElementsByClassName("textarea")[0];
+var inputArray = [email, yourName, message];
 
-form.addEventListener('submit', function(){
-    console.log(form);
-    form.noValidate = true;
-    if(email.validity.typeMismatch){
-        event.preventDefault();
-        email.setCustomValidity("Please provide a valid email");
+
+email.addEventListener("keyup", displayInvalidMessage(email, "Please provide a valid email"));
+yourName.addEventListener("keyup", displayInvalidMessage(yourName, "Please provide your name for the message"));
+message.addEventListener("keyup", displayInvalidMessage(message, "Please include some content for your message"));
+
+function displayInvalidMessage(element, message) {
+    if(element.checkValidity() === false){
+        element.setCustomValidity(message);
     } else {
-        email.setCustomValidity("");
-    } if(yourName.checkValidity() === false) {
-        event.preventDefault();
-        yourName.setCustomValidity("Please provide your name in the message");
-    } else {
-        yourName.setCustomValidity("");
-    } if(message.checkValidity() === false){
-        event.preventDefault;
-        message.setCustomValidity("Please provide a message");
-    } else {
-        message.setCustomValidity("");
+        element.setCustomValidity('');
     }
-});
+};

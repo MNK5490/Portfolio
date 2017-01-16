@@ -76,7 +76,8 @@ header {
     padding: 15px 50px;
     border-radius: 20px;
     margin: 100px 0px 45px 0px;
-    border: 2px solid white; }
+    border: 2px solid white;
+    background: #009688; }
     header .resume a {
       color: white;
       cursor: pointer; }
@@ -442,6 +443,11 @@ a.social:hover {
 .form textarea:focus {
   border: 1px solid #FFC107;
   background: white; }
+
+.email:invalid,
+.textarea:invalid,
+.your-name:invalid {
+  border: 1px solid red; }
 
 .container {
   display: flex;

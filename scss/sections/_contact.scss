@@ -116,3 +116,9 @@
         border: 1px solid #FFC107;
         background: white;
     }
+
+    .email:invalid,
+    .textarea:invalid,
+    .your-name:invalid{
+        border: 1px solid red;
+    }
