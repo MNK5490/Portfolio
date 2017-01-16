@@ -69,6 +69,7 @@
                 line-height: 2.5em;
                 text-indent: 10px;
                 border: none;
+                outline: none;
                 border-radius: 5px;
                 background: rgba(230, 230, 230, 1);
                 @include media-query($tablet){
@@ -84,6 +85,7 @@
                 border: none;
                 border-radius: 5px;
                 margin: 6px auto;
+                outline:none;
                 height: 150px;
                 background: rgba(230, 230, 230, 1);
                 @include media-query($tablet){
@@ -107,4 +109,10 @@
                 }
             }
         }
+    }
+
+    .form input:focus,
+    .form textarea:focus {
+        border: 1px solid #FFC107;
+        background: white;
     }

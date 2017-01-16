@@ -401,6 +401,7 @@ a.social:hover {
       line-height: 2.5em;
       text-indent: 10px;
       border: none;
+      outline: none;
       border-radius: 5px;
       background: #e6e6e6; }
       @media (min-width: 724px) {
@@ -415,6 +416,7 @@ a.social:hover {
       border: none;
       border-radius: 5px;
       margin: 6px auto;
+      outline: none;
       height: 150px;
       background: #e6e6e6; }
       @media (min-width: 724px) {
@@ -435,6 +437,11 @@ a.social:hover {
       @media (min-width: 1024px) {
         .form fieldset button {
           margin: 6px; } }
+
+.form input:focus,
+.form textarea:focus {
+  border: 1px solid #FFC107;
+  background: white; }
 
 .container {
   display: flex;
