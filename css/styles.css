@@ -449,6 +449,11 @@ a.social:hover {
 .your-name:invalid {
   border: 1px solid red; }
 
+.email:valid,
+.textarea:valid,
+.your-name:valid {
+  background: #faffbd; }
+
 .container {
   display: flex;
   justify-content: center;
