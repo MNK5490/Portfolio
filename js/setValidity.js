@@ -1,7 +1,7 @@
 var email = document.getElementsByClassName("email")[0];
 var yourName = document.getElementsByClassName("your-name")[0];
 var message = document.getElementsByClassName("textarea")[0];
-var required = [email, yourName, message];
+var required = [yourName, email, message];
 var form = document.getElementsByClassName("form")[0];
 
 email.addEventListener('keyup', function(){
