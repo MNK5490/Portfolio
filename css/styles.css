@@ -395,7 +395,8 @@ a.social:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    flex-direction: column; }
     .form fieldset input {
       width: 100%;
       margin: 6px auto;
@@ -419,6 +420,7 @@ a.social:hover {
       margin: 6px auto;
       outline: none;
       height: 150px;
+      line-height: 2.5em;
       background: #e6e6e6; }
       @media (min-width: 724px) {
         .form fieldset .textarea {
