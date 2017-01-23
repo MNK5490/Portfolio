@@ -448,12 +448,14 @@ a.social:hover {
 
 .email:invalid,
 .textarea:invalid,
-.your-name:invalid {
+.your-name:invalid,
+.subject:invalid {
   border: 1px solid red; }
 
 .email:valid,
 .textarea:valid,
-.your-name:valid {
+.your-name:valid,
+.subject:valid {
   background: #faffbd; }
 
 .container {
