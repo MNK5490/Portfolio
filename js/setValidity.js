@@ -16,7 +16,7 @@ email.addEventListener('keyup', function(){
 form.addEventListener("submit", function(event){
     for(var i = 0; required.length > i; i++){
             if (required[i].checkValidity() === false){
-                event.preventDefault;
+                event.preventDefault();
                 console.log(required[i] + "is not valid!!!");
                 debugger;
             } else {
