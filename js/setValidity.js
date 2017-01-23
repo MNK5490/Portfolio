@@ -19,6 +19,8 @@ form.addEventListener("submit", function(event){
                 event.preventDefault;
                 console.log(required[i] + "is not valid!!!");
                 debugger;
+            } else {
+                console.log("form is valid");
             }
         }
 });
