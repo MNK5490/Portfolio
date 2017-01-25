@@ -72,6 +72,7 @@
                 border: none;
                 outline: none;
                 border-radius: 5px;
+                border: 1px solid #FFC107;
                 background: rgba(230, 230, 230, 1);
                 @include media-query($tablet){
                     width: 75%;
@@ -88,6 +89,7 @@
                 margin: 6px auto;
                 outline:none;
                 height: 150px;
+                border: 1px solid #FFC107;
                 line-height: 2.5em;
                 background: rgba(230, 230, 230, 1);
                 @include media-query($tablet){
@@ -115,16 +117,10 @@
 
     .form input:focus,
     .form textarea:focus {
-        border: 1px solid #FFC107;
+        border: 3px solid #FFC107;
         background: white;
     }
 
-    .email:invalid,
-    .textarea:invalid,
-    .your-name:invalid,
-    .subject:invalid {
-        border: 1px solid red;
-    }
     .email:valid,
     .textarea:valid,
     .your-name:valid,
