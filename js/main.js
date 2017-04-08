@@ -1,7 +1,6 @@
 var resume = document.getElementsByClassName("resume")[0];
 var image = document.getElementsByClassName("image-cropper")[0];
 var resumeText = resume.querySelector("a");
-var main_nav = document.getElementsByClassName('main-nav')[0];
 
 // (1) Adding Resume Styles
 
@@ -56,12 +55,3 @@ image.addEventListener("mouseleave", function(){
     resume.style.background = "#009688";
 });
 
-document.addEventListener('scroll', function(){
-	if(window.scrollY >= 58){
-        console.log(window.scrollY);	
-        main_nav.style.visibility = 'hidden';
-} else if (window.scrollY === 0){
-    	console.log(window.scrollY);	
-		main_nav.style.visibility = 'visible';
-	}
-})
