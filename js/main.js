@@ -1,13 +1,11 @@
-var resume = document.getElementsByClassName("resume")[0];
-var image = document.getElementsByClassName("image-cropper")[0];
-var resumeText = resume.querySelector("a");
-var main_nav = document.getElementsByClassName('main-nav')[0];
-
 // (1) Adding Resume Styles
 
 // (a) On Hover
 
 resume.addEventListener("mouseover", function(){
+    var resumeText = resume.querySelector("a");
+    var resume = document.getElementsByClassName("resume")[0];
+    var image = document.getElementsByClassName("image-cropper")[0];
         console.log('resume mouse over triggered');
     	var image = document.getElementsByClassName("image-cropper")[0];
         image.style.transform = "scale(1.5) rotate(-10deg)";
@@ -22,6 +20,9 @@ resume.addEventListener("mouseover", function(){
 // (b) On mouseleave
 
 resume.addEventListener("mouseleave", function(){
+    var resumeText = resume.querySelector("a");
+    var resume = document.getElementsByClassName("resume")[0];
+    var image = document.getElementsByClassName("image-cropper")[0];
         console.log('resume mouseleave triggered');
     	var image = document.getElementsByClassName("image-cropper")[0];
         image.style.transform = "scale(1) rotate(0deg)";
@@ -36,6 +37,9 @@ resume.addEventListener("mouseleave", function(){
 // (a) On Mouseover
 
 image.addEventListener("mouseover", function(){
+    var resumeText = resume.querySelector("a");
+    var resume = document.getElementsByClassName("resume")[0];
+    var image = document.getElementsByClassName("image-cropper")[0];
     console.log('image mouseover triggered');
     image.style.transform = "scale(1.5) rotate(10deg)";
     image.style.border= "6px solid #FFC107";
@@ -48,6 +52,9 @@ image.addEventListener("mouseover", function(){
 // (b) On Mouseleave
 
 image.addEventListener("mouseleave", function(){
+    var resumeText = resume.querySelector("a");
+    var resume = document.getElementsByClassName("resume")[0];
+    var image = document.getElementsByClassName("image-cropper")[0];
     console.log('image mouseleave triggered');
     image.style.transform = "scale(1) rotate(0deg)";
     image.style.border= "6px solid #B2DFDB";
@@ -57,6 +64,7 @@ image.addEventListener("mouseleave", function(){
 });
 
 document.addEventListener('scroll', function(){
+var main_nav = document.getElementsByClassName('main-nav')[0];
 	if(window.scrollY >= 58){
         console.log(window.scrollY);	
         main_nav.style.visibility = 'hidden';
