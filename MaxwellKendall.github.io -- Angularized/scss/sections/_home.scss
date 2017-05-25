@@ -1,0 +1,148 @@
+// Home Page Specific Header:
+
+
+//Psuedo Elements
+.homepage-container {
+  width:100%;
+}
+.header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #009688;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 175px;
+    line-height: 1.5;
+    width: 100%;
+    @include media-query($tablet){
+        padding-top: 80px;
+    }
+    .image-cropper {
+      margin: 70px 0px 0px 0px;
+      height: 250px;
+      width: 250px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 6px solid #B2DFDB;
+      transition: all .5s;
+      box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    .image {
+      height: 100%;
+      position: absolute;
+      right: -50%;
+      width: auto;
+      margin: 0 auto;
+      padding-right: 50px;
+    }
+    .resume {
+        padding: 15px 50px;
+        border-radius: 20px;
+        margin: 100px 0px 45px 0px;
+        border: 2px solid white;
+        background: #009688;
+    a {
+        color: white;
+        cursor: pointer;
+        @include media-query($tablet) {
+            padding: 25px;
+        }
+    }
+  }
+}
+
+.resume:hover {
+    background: white;
+    border: 3px solid #FFC107;
+    a {
+        color:#FFC107;
+    }
+}
+
+
+// Home Page Content
+.flex {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #B2DFDB;
+  @include media-query($tablet) {
+      flex-direction: row;
+  }
+  .card {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    text-align: left;
+    background: #fff;
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 6px;
+    transition: all .5s;
+    width: 95%;
+    @include media-query($tablet){
+        width: 49%;
+        height: 1565px;
+      }
+      @include media-query($desktop){
+          width: 500px;
+          height: 1125px;
+        }
+  }
+     p {
+      line-height: 1.6em;
+    }
+}
+    .skills,
+    .planned {
+        li  {
+          border-radius: 6px;
+          display: flex;
+          background: #009688;
+          color: white;
+          padding: 5px 10px;
+          width: 100%;
+          margin: 2px;
+
+          a {
+              color: white;
+              text-align: left;
+              height: 100%;
+              width: 100%;
+              cursor: pointer;
+          }
+        }
+    }
+    .goals-header {
+        display: flex;
+        align-items: center;
+        h4 {
+            margin-right: auto;
+        }
+    }
+    .planned {
+        li {
+            background: #FFC107;
+        }
+    }
+.planned li:hover,
+#frameworks li:hover,
+#AdobeSuite li:hover {
+    background: white;
+    border: 1px solid #FFC107;
+    color: #FFC107;
+    cursor: default;
+    a {
+    color: #FFC107;
+    cursor: pointer;
+    }
+}
+
+.skills li:hover {
+    background: white;
+    border: 1px solid #009688;
+    color: #009688;
+}
