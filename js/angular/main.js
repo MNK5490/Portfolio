@@ -51,32 +51,34 @@ max.controller('mainController', ['$scope', '$log', 'scroll', function($scope, $
     document.addEventListener('scroll', scroll.hideScroll)
   }]);
 
-max.controller('portfolioController', ['$scope', function($scope){
+max.controller('portfolioController', ['$scope', 'scroll', function($scope){
     $scope.test = [
         {test: 'abc'},
         { test: 'xyz'}
     ];
+    document.addEventListener('scroll', scroll.hideScroll);
 }]);
 
-max.controller('experienceController', ['$scope', function($scope){
+max.controller('experienceController', ['$scope', 'scroll', function($scope){
     $scope.test = [
         {test: 'abc'},
         { test: 'xyz'}
     ];
+    document.addEventListener('scroll', scroll.hideScroll);
 }]);
 
-max.controller('contactController', ['$scope', function($scope){
-    $scope.test = [
+max.controller('contactController', ['$scope', 'scroll', function($scope){ $scope.test = [
         {test: 'abc'},
         { test: 'xyz'}
     ];
+    document.addEventListener('scroll', scroll.hideScroll);
 }]);
 
 max.service('scroll', function() {
   var self = this;
   self.main_nav = document.getElementsByClassName('main-nav')[0];
   self.hideScroll = function(){
-  	if(window.scrollY >= 58){
+  	if(window.scrollY >= 58 && window.innerWidth < 746){
           console.log(window.scrollY);
           self.main_nav.style.visibility = 'hidden';
   } else if (window.scrollY === 0){
