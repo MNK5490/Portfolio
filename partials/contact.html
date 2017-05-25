@@ -4,10 +4,10 @@
     </div>
     <div class="contact-form">
         <h1>I'd love to hear from you!</h1>
-        <form class="form" action="https://formspree.io/maxwellnkendall@gmail.com" method="POST">
+        <form class="form" action="https://formspree.io/maxwellnkendall@gmail.com" method="POST" ng-submit="validate()">
             <fieldset class="pure-group">
                 <input name="users-name" type="text" class="pure-input-1-2 your-name" placeholder="Your Name" required>
-                <input name="_replyto" type="email" class="pure-input-1-2 email" placeholder="Your Email" required>
+                <input name="_replyto" type="email" class="pure-input-1-2 email" placeholder="Your Email" required >
                 <input name="_subject" type="text" class="pure-input-1-2 subject" placeholder="The Subject Line" required>
                 <textarea name="message" type="text" class="pure-input-1-2 textarea" placeholder="Your Message" required></textarea>
                 <button type="submit" class="pure-button">Send</button>

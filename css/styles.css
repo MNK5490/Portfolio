@@ -456,10 +456,14 @@ a.social:hover {
       border-radius: 5px;
       width: 100%;
       background: rgba(0, 150, 136, 0.85);
-      color: white; }
+      color: white;
+      padding: 10px 0pc;
+      border: none;
+      font-size: 13px; }
       @media (min-width: 724px) {
         .form fieldset button {
-          width: 75%; } }
+          width: 75%;
+          font-size: 15px; } }
       @media (min-width: 1024px) {
         .form fieldset button {
           margin: 6px; } }
@@ -474,6 +478,14 @@ a.social:hover {
 .your-name:valid,
 .subject:valid {
   background: #faffbd; }
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 13px; }
+  @media (min-width: 724px) {
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 15px; } }
 
 .container {
   display: flex;

@@ -105,8 +105,12 @@
                 width: 100%;
                 background: rgba(0, 150, 136, .85);
                 color: white;
+                padding: 10px 0pc;
+                border: none;
+                font-size: 13px;
                 @include media-query($tablet){
                     width: 75%;
+                    font-size: 15px;
                 }
                 @include media-query($desktop){
                     margin: 6px;
@@ -126,4 +130,12 @@
     .your-name:valid,
     .subject:valid {
         background: rgba(250, 255, 189, 1);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 13px;
+        @include media-query($tablet){
+            font-size: 15px;
+        }
     }
