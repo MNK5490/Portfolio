@@ -48,7 +48,7 @@ max.controller('mainController', ['$scope', '$log', 'scroll', function($scope, $
       $scope.pageVariables.resume.style.background = "#009688";
     };
     $scope.x = document;
-    $scope.$watch($scope.x, 'scroll');
+    document.addEventListener('scroll', scroll.hideScroll)
   }]);
 
 max.controller('portfolioController', ['$scope', function($scope){
