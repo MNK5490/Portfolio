@@ -183,6 +183,11 @@ a.social:hover {
     width: auto;
     margin: 0 auto;
     padding-right: 50px; }
+  .header-main .resume-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
   .header-main .resume {
     padding: 15px 50px;
     border-radius: 20px;
@@ -195,6 +200,16 @@ a.social:hover {
       @media (min-width: 724px) {
         .header-main .resume a {
           padding: 25px; } }
+  .header-main .download {
+    display: none; }
+    @media (min-width: 724px) {
+      .header-main .download {
+        display: flex;
+        padding-left: 5px;
+        border-radius: 20px;
+        margin: 100px 0px 45px 0px; } }
+    .header-main .download i.fa.fa-download {
+      color: white; }
 
 .resume:hover {
   background: white;
@@ -276,18 +291,22 @@ a.social:hover {
   border: 1px solid #009688;
   color: #009688; }
 
-#experience {
-  color: white; }
+.resume-download {
+  margin-bottom: 15px; }
+  .resume-download a {
+    color: white;
+    text-decoration: none; }
 
-.fa-search:before {
-  content: "\f002";
-  color: white;
-  margin-right: 10px; }
-
-.search {
-  border-radius: 5px;
-  border: none;
-  padding: 10px; }
+.experience-container {
+  padding-top: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 724px) {
+    .experience-container {
+      flex-direction: row;
+      padding-top: 0px; } }
 
 .experience-card {
   text-align: left;

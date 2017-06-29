@@ -1,19 +1,14 @@
-#experience {
-  color: white;
+.experience-container {
+    padding-top: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media-query($tablet){
+        flex-direction: row;
+        padding-top: 0px;
+    }
 }
-
-    .fa-search:before {
-    content: "\f002";
-    color: white;
-    margin-right: 10px;
-}
-.search {
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-}
-
-
 
 .experience-card {
   text-align: left;

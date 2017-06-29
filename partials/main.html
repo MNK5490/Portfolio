@@ -1,11 +1,15 @@
 <div class="homepage-container">
-    
+
   <div class="header-main">
     <div ng-mouseover="mouseOver('scale(1.5) rotate(10deg)')" ng-mouseleave="mouseLeave()" class="image-cropper">
-      <a href="MaxwellKendallResumeTraditional.pdf"><img src="images/profile_picture.jpg" alt="Max Dancin'" class="image rotate"></a>
+      <a href="" onClick="window.open('Maxwell_Kendall_Resume.pdf')"><img src="images/profile_picture.jpg" alt="Max Dancin'" class="image rotate"></a>
     </div>
-    <div class="resume">
-        <a href="MaxwellKendallResumeTraditional.pdf" ng-mouseover="mouseOver('scale(1.5) rotate(-10deg)')" ng-mouseleave="mouseLeave()"><span>Resume</span></a>
+    <div class="resume-container">
+        <div class="resume">
+            <a href="" onClick="window.open('Maxwell_Kendall_Resume.pdf')" ng-mouseover="mouseOver('scale(1.5) rotate(-10deg)')" ng-mouseleave="mouseLeave()"><span>Resume</span></span></a>
+        </div>
+        <a class="download" href="Maxwell_Kendall_Resume.pdf" download ng-mouseover="mouseOver('scale(1.5) rotate(-10deg)')" ng-mouseleave="mouseLeave()"><i class="fa fa-download" aria-hidden="true"></i>
+        </a>
     </div>
   </div>
   <div class="flex">
