@@ -80,6 +80,13 @@
     }
 }
 
+.download:hover {
+    i.fa.fa-download {
+        color: #FFC107;
+        transform: scale(1.5);
+    }
+}
+
 
 // Home Page Content
 .flex {

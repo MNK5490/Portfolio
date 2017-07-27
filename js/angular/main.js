@@ -20,6 +20,9 @@ max.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'partials/contact.html',
       controller: 'contactController'
   })
+  .when('/thanks', {
+      templateUrl: 'partials/thanks.html'
+  })
   .otherwise({
     redirectTo: '/'
   });

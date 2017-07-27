@@ -217,6 +217,10 @@ a.social:hover {
   .resume:hover a {
     color: #FFC107; }
 
+.download:hover i.fa.fa-download {
+  color: #FFC107;
+  transform: scale(1.5); }
+
 .flex {
   padding-top: 20px;
   display: flex;
