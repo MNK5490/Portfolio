@@ -108,10 +108,30 @@ max.controller('portfolioController', ['$scope', function($scope){
 }]);
 
 max.controller('experienceController', ['$scope', function($scope){
-    $scope.test = [
-        {test: 'abc'},
-        { test: 'xyz'}
+    $scope.experienceArray = [
+      {
+          company: 'Charleston Digital Hub of Booz Allen Hamilton',
+          position: 'UI Engineer',
+          duration: 'Since April 2017',
+          description: 'test',
+          imgUrl: 'images/BoozLogo.png'
+        },
+        {
+        company: 'Charleston Digital Hub of Booz Allen Hamilton',
+        position: 'Production Opertaions Analyst',
+        duration: 'June 2015 - March 2017',
+        description: 'test',
+        imgUrl: 'images/BoozLogo.png'
+      },
+      {
+        company: 'BenefitFocus',
+        position: 'Application Anaylst',
+        duration: 'June 2014 - May 2015',
+        description: 'test',
+        imgUrl: 'images/benefitfocus-logo.png'
+      },
     ];
+    console.log($scope.experienceArray);
 }]);
 
 max.controller('contactController', ['$scope', function($scope){
@@ -156,6 +176,17 @@ max.directive('portfolioItem', function(){
         restrict: 'AECM',
         replace: true,
         templateUrl: "js/directives/portfolioItem.html",
+        scope: {
+            portfolioArray : "="
+        }
+    }
+});
+
+max.directive('experienceItem', function(){
+    return {
+        restrict: 'AECM',
+        replace: true,
+        templateUrl: "js/directives/experienceItem.html",
         scope: {
             portfolioArray : "="
         }

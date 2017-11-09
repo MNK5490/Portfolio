@@ -1,7 +1,7 @@
 <li>
-    <h2><a class="folio-header" href="https://maxwellkendall.github.io/Web-Dashboard/">{{ portfolioArray.title }}</a></h2>
+    <h2><a class="folio-header" href="{{ portfolioArray.url }}">{{ portfolioArray.title }}</a></h2>
     <a href="{{ portfolioArray.url }}">
-        <img src="{{ portfolioArray.img }}" alt="Web Dashboard" />
+        <img src="{{ portfolioArray.img }}" alt="{{ portfolioArray.title }}" />
     </a>
     <p>{{ portfolioArray.description }}</p>
 </li>
