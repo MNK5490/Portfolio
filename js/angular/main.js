@@ -56,9 +56,9 @@ max.controller('mainController', ['$scope', '$log', 'scroll', function($scope, $
 max.controller('portfolioController', ['$scope', function($scope){
     $scope.portfolioArray = [
       {
-              title: 'Google Books API',
-              url: 'https://maxwellkendall.github.io/Book-Project/',
-              description: 'React and Redux Project integrated with the Google Books API',
+              title: 'Book Explorer',
+              url: 'https://maxwellkendall.github.io/Book-Explorer/',
+              description: 'React, Redux Project integrated with the Google Books API',
               img: 'images/Book-Project.jpg'
       },
       {
