@@ -345,6 +345,9 @@ a.social:hover {
         margin-left: 2rem;
         align-items: center;
         flex-wrap: wrap; }
+        @media (min-width: 724px) {
+          .experience-container .experience-card .experience__header .experience__position {
+            flex-wrap: nowrap; } }
         .experience-container .experience-card .experience__header .experience__position span {
           width: 100%; }
           @media (min-width: 724px) {

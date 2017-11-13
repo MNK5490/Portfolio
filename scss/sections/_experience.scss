@@ -51,6 +51,9 @@
           margin-left: 2rem;
           align-items: center;
           flex-wrap: wrap;
+          @include media-query($tablet){
+            flex-wrap: nowrap;
+          }
           span {
             width: 100%;
             @include media-query($tablet){
