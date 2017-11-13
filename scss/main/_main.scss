@@ -40,8 +40,6 @@ body {
     // padding: 75px;
     background: #B2DFDB;
     align-items: center;
-    min-height:100%;
-    padding-bottom: 60px;
     @include media-query($tablet){
         flex-direction: row;
         padding-top: 58px;
