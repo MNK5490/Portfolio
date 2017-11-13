@@ -302,12 +302,12 @@ a.social:hover {
     text-decoration: none; }
 
 .experience-container {
-  padding-top: 175px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%; }
+  width: 100%;
+  padding: 175px, 2rem, 2rem, 2rem; }
   @media (min-width: 724px) {
     .experience-container {
       padding-top: 0px; } }
