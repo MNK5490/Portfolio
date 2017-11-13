@@ -59,7 +59,7 @@ max.controller('portfolioController', ['$scope', function($scope){
               title: 'Book Explorer',
               url: 'https://maxwellkendall.github.io/Book-Explorer/',
               description: 'React, Redux Project integrated with the Google Books API',
-              img: 'images/Book-Project.jpg'
+              img: 'images/Book-Explorer.jpg'
       },
       {
             title: 'Web Dashboard',

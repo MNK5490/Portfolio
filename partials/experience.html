@@ -1,6 +1,7 @@
 <!-- Could definitely use ng repeat here -->
 <ul class="experience-container">
-    <div class="experience-card">
+  <experience-item ng-repeat="experience in experienceArray" experience-array="experience"></experience-item>
+    <!-- <div class="experience-card">
         <div class="experience-header">
           <h2><a href='http://www.sparcedge.com/'>Charleston Digital Hub of Booz Allen Hamilton</a></h2>
           <h4 class="experience-title">UI/UX Engineer</h4>
@@ -24,5 +25,5 @@
             <li>Daily engaged with User Experience on Tier 1, Tier 2, and Tier 3 level</li>
             <li>Participated in Release Specific testing in light of given technical requirements</li>
         </ul>
-    </div>
+    </div> -->
 </ul>
