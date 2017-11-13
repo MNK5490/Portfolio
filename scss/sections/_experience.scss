@@ -6,7 +6,7 @@
     width: 100%;
     padding: 175px, 2rem, 2rem, 2rem;
     @include media-query($tablet){
-        padding-top: 0px;
+      padding: 0rem, 2rem, 2rem, 2rem;
     }
     .experience-card {
       justify-content: flex-start;
