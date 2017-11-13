@@ -114,24 +114,24 @@ max.controller('experienceController', ['$scope', function($scope){
         position: 'UI Engineer',
         duration: 'Since April 2017',
         description: 'test',
-        imgUrl: 'images/BoozLogo.png'
+        img: 'images/BoozLogo.png'
         },
         {
         company: 'Charleston Digital Hub of Booz Allen Hamilton',
         position: 'Production Opertaions Analyst',
         duration: 'June 2015 - March 2017',
         description: 'test',
-        imgUrl: 'images/BoozLogo.png'
+        img: 'images/BoozLogo.png'
       },
       {
         company: 'BenefitFocus',
         position: 'Application Anaylst',
         duration: 'June 2014 - May 2015',
         description: 'test',
-        imgUrl: 'images/benefitfocus-logo.jpg'
+        img: 'images/benefitfocus-logo.jpg'
       },
     ];
-    console.log($scope.experienceArray);
+    console.log('hello?', $scope.experienceArray.map(el => el.img));
 }]);
 
 max.controller('contactController', ['$scope', function($scope){

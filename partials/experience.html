@@ -1,29 +1,40 @@
 <!-- Could definitely use ng repeat here -->
 <ul class="experience-container">
-  <experience-item ng-repeat="experience in experienceArray" experience-array="experience"></experience-item>
-    <!-- <div class="experience-card">
-        <div class="experience-header">
-          <h2><a href='http://www.sparcedge.com/'>Charleston Digital Hub of Booz Allen Hamilton</a></h2>
-          <h4 class="experience-title">UI/UX Engineer</h4>
-          <h4>April 2017 - Present</h4>
-      </div>
-      <ul class="experience-summary">
-          <li>Design new features using best practice wire-framing methods within an Agile Development environment</li>
-          <li>Utlize HTML, CSS, JavaScript, LESS, Version Control</li>
-          <li>Usability research, testing, and user-centered design</li>
-      </ul>
+  <!-- <experience-item ng-repeat="experience in experienceArray" experience-array="experience"></experience-item> -->
+  <li class="experience-card">
+    <div class="experience__header">
+      <h3 class="experience__title">Charleston Digital Hub of Booz Allen Hamilton</h4>
+      <h4 class="experience__position">UI Engineer<span>Since April 2017</span></h3>
+      <h5 class="experience__location">Charleston, SC</h5>
     </div>
-    <div class="experience-card">
-        <div class="experience-header">
-          <h2><a href='https://www.benefitfocus.com/'>Benefitfocus & SPARC Hub of Booz Allen</a></h2>
-          <h4 class="experience-title">Application Analyst</h4>
-          <h4>June 2014 - June 2015 (Benefitfocus)</h4>
-          <h4>June 2015 - February 2017 (SPARC)</h4>
-        </div>
-        <ul class="experience-summary">
-            <li>Triaged techincal application issues through collaboration with multiple teams</li>
-            <li>Daily engaged with User Experience on Tier 1, Tier 2, and Tier 3 level</li>
-            <li>Participated in Release Specific testing in light of given technical requirements</li>
-        </ul>
-    </div> -->
+    <div class="experience__content">
+      <div class="experience__image">
+        <img src="images/booz.png" alt="Booz Logo">
+      </div>
+    </div>
+  </li>
+  <li class="experience-card">
+    <div class="experience__header">
+      <h3 class="experience__title">Charleston Digital Hub of Booz Allen Hamilton</h4>
+      <h4 class="experience__position">Production Operations Analyst<span>June 2015 - March 2017</span></h3>
+      <h5 class="experience__location">Charleston, SC</h5>
+    </div>
+    <div class="experience__content">
+      <div class="experience__image">
+        <img src="images/booz.png" alt="Booz Logo">
+      </div>
+    </div>
+  </li>
+  <li class="experience-card">
+    <div class="experience__header">
+      <h3 class="experience__title">Benefitfocus</h4>
+      <h4 class="experience__position">Application Analyst<span>June 2014 - May 2015</span></h3>
+      <h5 class="experience__location">Charleston, SC</h5>
+    </div>
+    <div class="experience__content">
+      <div class="experience__image">
+        <img src="images/bflogo.png" alt="BF Logo">
+      </div>
+    </div>
+  </li>
 </ul>

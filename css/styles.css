@@ -305,74 +305,82 @@ a.social:hover {
   padding-top: 175px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%; }
   @media (min-width: 724px) {
     .experience-container {
-      flex-direction: row;
       padding-top: 0px; } }
-
-.experience-card {
-  text-align: left;
-  background: #fff;
-  border-radius: 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all .5s;
-  width: 95%;
-  margin: 10px;
-  padding: 15px;
-  color: #757575; }
-  @media (min-width: 724px) {
-    .experience-card {
-      width: 45%;
-      margin: 30px;
-      padding: 20px 40px 40px; } }
-  .experience-card h2,
-  .experience-card h3,
-  .experience-card h4 {
-    margin: 5px;
+  .experience-container .experience-card {
+    justify-content: flex-start;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center; }
-  @media (min-width: 724px) {
-    .experience-card h2 {
-      height: 105px; } }
-  @media (min-width: 1024px) {
-    .experience-card h2 {
-      height: 68px; } }
-  .experience-card h2 a {
-    color: black; }
-  .experience-card .experience-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; }
+    background: white;
+    margin-bottom: .5rem;
+    border: .1rem solid #1F8275;
+    border-radius: .25rem;
+    flex-direction: column; }
     @media (min-width: 724px) {
-      .experience-card .experience-header {
-        height: 265px; } }
-    @media (min-width: 1024px) {
-      .experience-card .experience-header {
-        height: 200px; } }
-  @media (min-width: 724px) {
-    .experience-card .experience-title {
-      height: 100px; } }
-  @media (min-width: 1024px) {
-    .experience-card .experience-title {
-      height: 64px;
-      margin: 15px; } }
-  .experience-card ul.experience-summary {
-    list-style: square; }
-    @media (min-width: 724px) {
-      .experience-card ul.experience-summary {
-        height: 405px; } }
-    @media (min-width: 1024px) {
-      .experience-card ul.experience-summary {
-        height: 200px; } }
-    .experience-card ul.experience-summary li {
-      margin: 10px; }
+      .experience-container .experience-card {
+        flex-direction: row; } }
+    .experience-container .experience-card .experience__header,
+    .experience-container .experience-card .experience__content {
+      padding-left: 1rem;
+      justify-content: flex-start;
+      text-align: left;
+      display: flex;
+      width: 100%; }
+    .experience-container .experience-card .experience__header {
+      flex-direction: column;
+      margin-right: auto;
+      flex-wrap: wrap;
+      padding-bottom: 1rem;
+      flex-wrap: wrap; }
+      @media (min-width: 724px) {
+        .experience-container .experience-card .experience__header {
+          width: 45%; } }
+      .experience-container .experience-card .experience__header .experience__title {
+        margin: 1rem; }
+      .experience-container .experience-card .experience__header .experience__position {
+        display: flex;
+        margin: 0rem;
+        margin-left: 2rem;
+        align-items: center;
+        flex-wrap: wrap; }
+        .experience-container .experience-card .experience__header .experience__position span {
+          width: 100%; }
+          @media (min-width: 724px) {
+            .experience-container .experience-card .experience__header .experience__position span {
+              width: auto;
+              margin-left: 3rem;
+              margin-right: 1rem; } }
+      .experience-container .experience-card .experience__header .experience__location {
+        margin: 0rem;
+        margin-left: 2rem; }
+    .experience-container .experience-card .experience__content {
+      flex-direction: row;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: left; }
+      @media (min-width: 724px) {
+        .experience-container .experience-card .experience__content {
+          width: 55%; } }
+      .experience-container .experience-card .experience__content .experience__image {
+        order: 1;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 2rem;
+        padding-bottom: 1rem; }
+        @media (min-width: 724px) {
+          .experience-container .experience-card .experience__content .experience__image {
+            margin-left: auto;
+            padding-right: 1rem;
+            justify-content: flex-end; } }
+        .experience-container .experience-card .experience__content .experience__image img {
+          width: 100px;
+          height: 100px; }
 
 .experience-card:hover {
   box-shadow: 2px 7px 5px 0px; }

@@ -2,90 +2,99 @@
     padding-top: 175px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+    width: 100%;
     @include media-query($tablet){
-        flex-direction: row;
         padding-top: 0px;
     }
-}
-
-.experience-card {
-  text-align: left;
-  background: #fff;
-  border-radius: 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all .5s;
-  width: 95%;
-  margin: 10px;
-  padding: 15px;
-  color: rgba(117, 117, 117, 1);
-  @include media-query($tablet){
-      width: 45%;
-      margin: 30px;
-      padding: 20px 40px 40px;
-    }
-    @include media-query($desktop){
-        // width: 500px;
-        // height: 800px;
+    .experience-card {
+      justify-content: flex-start;
+      width: 100%;
+      display: flex;
+      background: white;
+      margin-bottom: .5rem;
+      border: .1rem solid #1F8275;
+      border-radius: .25rem;
+      flex-direction: column;
+      @include media-query($tablet){
+        flex-direction: row;
       }
-      h2,
-      h3,
-      h4 {
-          margin: 5px;
-          display:flex;
-          align-items: center;
-          justify-content: center;
+      .experience__header,
+      .experience__content {
+        padding-left: 1rem;
+        justify-content: flex-start;
+        text-align: left;
+        display: flex;
+        width: 100%;
       }
-      h2 {
-          @include media-query($tablet){
-              height: 105px;
-          }
-          @include media-query($desktop){
-              height: 68px;
-          }
-      }
-      h2 a {
-          color: black;
-      }
-      .experience-header {
+      .experience__header {
+        flex-direction: column;
+        margin-right: auto;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+        flex-wrap: wrap;
+        @include media-query($tablet){
+          width: 45%;
+        }
+        .experience__title,
+        .experience__position,
+        .experience__location {
+          // margin: 1rem;
+        }
+        .experience__title {
+          margin: 1rem;
+        }
+        .experience__position {
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          text-align: center;
-          @include media-query($tablet){
-              height: 265px;
+          margin: 0rem;
+          margin-left: 2rem;
+          align-items: center;
+          flex-wrap: wrap;
+          span {
+            width: 100%;
+            @include media-query($tablet){
+              width: auto;
+              margin-left: 3rem;
+              margin-right: 1rem;
+            }
           }
-          @include media-query($desktop){
-              height: 200px;
-          }
+        }
+        .experience__location {
+          margin: 0rem;
+          margin-left: 2rem;
+        }
       }
-      .experience-title {
+      .experience__content {
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        @include media-query($tablet){
+          width: 55%;
+        }
+        .experience__image {
+          order: 1;
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          margin-left: 2rem;
+          padding-bottom: 1rem;
           @include media-query($tablet){
-              height: 100px;
+            margin-left: auto;
+            padding-right: 1rem;
+            justify-content: flex-end;
           }
-          @include media-query($desktop){
-              height: 64px;
-              margin: 15px;
-          }
-      }
-      ul.experience-summary {
-          list-style: square;
-          @include media-query($tablet){
-              height: 405px;
-          }
-          @include media-query($desktop){
-              height: 200px;
-          }
-          li {
-              margin: 10px;
-          }
-      }
-}
 
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+    }
+  }
+}
 
 .experience-card:hover {
     box-shadow: 2px 7px 5px 0px;
