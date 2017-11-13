@@ -110,11 +110,11 @@ max.controller('portfolioController', ['$scope', function($scope){
 max.controller('experienceController', ['$scope', function($scope){
     $scope.experienceArray = [
       {
-          company: 'Charleston Digital Hub of Booz Allen Hamilton',
-          position: 'UI Engineer',
-          duration: 'Since April 2017',
-          description: 'test',
-          imgUrl: 'images/BoozLogo.png'
+        company: 'Charleston Digital Hub of Booz Allen Hamilton',
+        position: 'UI Engineer',
+        duration: 'Since April 2017',
+        description: 'test',
+        imgUrl: 'images/BoozLogo.png'
         },
         {
         company: 'Charleston Digital Hub of Booz Allen Hamilton',
