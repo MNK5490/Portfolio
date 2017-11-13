@@ -128,7 +128,7 @@ max.controller('experienceController', ['$scope', function($scope){
         position: 'Application Anaylst',
         duration: 'June 2014 - May 2015',
         description: 'test',
-        imgUrl: 'images/benefitfocus-logo.png'
+        imgUrl: 'images/benefitfocus-logo.jpg'
       },
     ];
     console.log($scope.experienceArray);
