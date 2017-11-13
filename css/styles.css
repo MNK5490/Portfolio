@@ -377,7 +377,8 @@ a.social:hover {
           .experience-container .experience-card .experience__content .experience__image {
             margin-left: auto;
             padding-right: 1rem;
-            justify-content: flex-end; } }
+            justify-content: flex-end;
+            padding-bottom: 0rem; } }
         .experience-container .experience-card .experience__content .experience__image img {
           width: 100px;
           height: 100px; }
