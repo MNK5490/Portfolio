@@ -241,11 +241,11 @@ a.social:hover {
     @media (min-width: 724px) {
       .flex .card {
         width: 49%;
-        height: 1565px; } }
+        height: auto; } }
     @media (min-width: 1024px) {
       .flex .card {
         width: 500px;
-        height: 1125px; } }
+        height: auto; } }
   .flex p {
     line-height: 1.6em; }
 
@@ -308,7 +308,7 @@ a.social:hover {
   padding: 175px 2rem 2rem 2rem; }
   @media (min-width: 724px) {
     .experience-container {
-      padding: 0rem 2rem 2rem 2rem; } }
+      padding: 2rem; } }
   .experience-container .experience-card {
     justify-content: flex-start;
     width: 100%;

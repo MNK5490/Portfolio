@@ -110,11 +110,11 @@
     width: 95%;
     @include media-query($tablet){
         width: 49%;
-        height: 1565px;
+        height: auto;
       }
       @include media-query($desktop){
           width: 500px;
-          height: 1125px;
+          height: auto;
         }
   }
      p {
