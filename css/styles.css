@@ -44,6 +44,7 @@ span {
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  min-height: 85%;
   background: #B2DFDB;
   align-items: center; }
   @media (min-width: 724px) {
@@ -102,8 +103,6 @@ a:hover {
 
 footer {
   width: 100%;
-  min-height: 30px;
-  height: 100%;
   padding: 20px 0 40px 0px;
   background: #00796B; }
   footer ul {
