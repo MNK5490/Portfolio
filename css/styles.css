@@ -103,6 +103,7 @@ a:hover {
 footer {
   width: 100%;
   min-height: 30px;
+  height: 100%;
   padding: 20px 0 40px 0px;
   background: #00796B; }
   footer ul {
