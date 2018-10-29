@@ -62,6 +62,12 @@ max.controller('portfolioController', ['$scope', function($scope){
               img: 'images/book-explorer.jpg'
       },
       {
+              title: 'Whack-a-mole',
+              url:'https://maxwellkendall.github.io/wack-a-mole-with-build-step/',
+              description: '100% Vanilla JS in ES6',
+              img: 'images/wack-a-mole.jpg'
+      },
+      {
             title: 'Web Dashboard',
             url: 'https://maxwellkendall.github.io/Web-Dashboard/',
             description: 'Chart.js library integration with client side local-storage and form-validation',
