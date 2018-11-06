@@ -68,6 +68,12 @@ max.controller('portfolioController', ['$scope', function($scope){
               img: 'images/wack-a-mole.jpg'
       },
       {
+            title: 'Movie Search',
+            url: 'https://maxwellkendall.github.io/movie-search/',
+            description: 'Custom webpack configuration, Promises, Responsive, ES6, React, Redux, integrates with OMDB API',
+            img: 'images/MovieSearch.jpg'
+      },
+      {
             title: 'Web Dashboard',
             url: 'https://maxwellkendall.github.io/Web-Dashboard/',
             description: 'Chart.js library integration with client side local-storage and form-validation',
